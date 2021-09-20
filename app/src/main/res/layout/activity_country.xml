@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <com.minhhop.easygolf.presentation.custom.EasyGolfToolbar
+        android:id="@+id/toolbarBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isLight="false"
+        app:title="@string/country" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editSearch"
+        style="@style/normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/normal_margin"
+        android:background="@drawable/background_edit_search"
+        android:drawablePadding="@dimen/normal_margin"
+        android:gravity="center|start"
+        android:hint="@string/search_country"
+        android:inputType="text"
+        android:paddingStart="@dimen/normal_margin"
+        android:paddingTop="@dimen/little_margin"
+        android:paddingEnd="@dimen/normal_margin"
+        android:paddingBottom="@dimen/little_margin"
+        android:textSize="@dimen/normal_font_size"
+        app:drawableStartCompat="@drawable/places_ic_search"
+        app:drawableTint="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listCountry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/layout_mask"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

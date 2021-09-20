@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:background="#f3f3f3"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="0dp"
+        android:layout_weight="0.4"
+        android:layout_height="@dimen/height_item_video"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="7dp"
+        >
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_size_normal"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_normal"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/txtTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4d92dd"
+            android:textSize="@dimen/font_size_normal"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

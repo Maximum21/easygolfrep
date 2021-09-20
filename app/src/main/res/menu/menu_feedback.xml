@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionGeneral"
+        android:title="@string/general_question"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/actionSuggestion"
+        android:title="@string/suggestion"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/actionRecentPost"
+        android:title="@string/recent_post"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/actionIncorrectHole"
+        android:title="@string/incorrect_hole_details"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/actionIncorrectCourse"
+        android:title="@string/incorrect_course_details"
+        app:showAsAction="never"
+        />
+
+</menu>

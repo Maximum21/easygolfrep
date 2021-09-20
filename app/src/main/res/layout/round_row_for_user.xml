@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/normal_margin"
+    android:layout_marginBottom="@dimen/d_10"
+    android:background="@drawable/round_corners_background_white"
+    android:paddingBottom="@dimen/d_5">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/round_history_row_club_name"
+        style="@style/bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d_10"
+        android:layout_marginEnd="@dimen/d_15"
+        android:textColor="@color/textColorDark"
+        android:textSize="@dimen/x_normal_font_size"
+        app:layout_constraintEnd_toStartOf="@+id/round_history_row_grossnet_values_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/round_history_row_date_iv"
+        android:layout_width="@dimen/d_15"
+        android:layout_height="@dimen/d_15"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_icon_access_time"
+        app:layout_constraintBottom_toBottomOf="@+id/round_history_row_date_tv"
+        app:layout_constraintStart_toStartOf="@+id/round_history_row_club_name"
+        app:layout_constraintTop_toTopOf="@+id/round_history_row_date_tv"
+        app:tint="@color/green_border_color" />
+
+    <TextView
+        android:id="@+id/round_history_row_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_15"
+        android:layout_marginTop="@dimen/d_10"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/round_history_row_date_iv"
+        app:layout_constraintTop_toBottomOf="@+id/round_history_row_club_name" />
+
+    <ImageView
+        android:id="@+id/round_history_row_extra_circle_iv"
+        android:layout_width="@dimen/d_15"
+        android:layout_height="@dimen/d_15"
+        android:layout_marginTop="@dimen/d_20"
+        android:src="@drawable/ic_icon_option_tee"
+        android:contentDescription="@null"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/round_history_row_club_name"
+        app:layout_constraintTop_toBottomOf="@+id/round_history_row_date_tv" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/round_history_row_thru_title"
+        style="@style/normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_30"
+        android:drawablePadding="@dimen/small_margin"
+        android:text="@string/thru"
+        android:textColor="@color/textColorDark"
+        android:textSize="@dimen/x_small_font_size"
+        app:layout_constraintBottom_toBottomOf="@+id/round_history_row_tepar_title"
+        app:layout_constraintStart_toEndOf="@+id/round_history_row_tepar_count"
+        app:layout_constraintTop_toTopOf="@+id/round_history_row_tepar_title" />
+
+    <TextView
+        android:id="@+id/round_history_row_thru_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_3"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/round_history_row_thru_title"
+        app:layout_constraintStart_toEndOf="@+id/round_history_row_thru_title" />
+
+    <TextView
+        android:id="@+id/round_history_row_strokes_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_30"
+        android:layout_marginEnd="@dimen/d_3"
+        android:text="@string/strokes"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/round_history_row_extra_circle_iv"
+        app:layout_constraintStart_toEndOf="@+id/round_history_row_thru_count"
+        app:layout_constraintTop_toTopOf="@+id/round_history_row_extra_circle_iv" />
+
+    <TextView
+        android:id="@+id/round_history_row_strokes_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_3"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/round_history_row_strokes_title"
+        app:layout_constraintStart_toEndOf="@+id/round_history_row_strokes_title" />
+
+    <TextView
+        android:id="@+id/round_history_row_tepar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/d_3"
+        android:text="@string/hdc"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/round_history_row_extra_circle_iv"
+        app:layout_constraintStart_toStartOf="@+id/round_history_row_date_tv"
+        app:layout_constraintTop_toTopOf="@+id/round_history_row_extra_circle_iv" />
+
+    <TextView
+        android:id="@+id/round_history_row_tepar_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_3"
+        android:layout_marginEnd="@dimen/d_25"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/round_history_row_tepar_title"
+        app:layout_constraintStart_toEndOf="@+id/round_history_row_tepar_title" />
+
+
+    <View
+        android:id="@+id/round_history_gross_net_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/round_gros_nes_circle_bg"
+        app:layout_constraintBottom_toBottomOf="@id/round_history_row_grossnet_values_tv"
+        app:layout_constraintEnd_toEndOf="@id/round_history_row_grossnet_values_tv"
+        app:layout_constraintStart_toStartOf="@id/round_history_row_grossnet_values_tv"
+        app:layout_constraintTop_toTopOf="@id/round_history_row_grossnet_values_tv" />
+
+    <TextView
+        android:id="@+id/round_history_row_grossnet_values_tv"
+        android:layout_width="@dimen/d_50"
+        android:layout_height="@dimen/d_50"
+        android:layout_margin="@dimen/d_10"
+        android:gravity="center"
+        android:text="@string/not_available_over"
+        android:textColor="@color/colorwriteBlue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/round_history_row_handicap_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_15"
+        android:text="Handicap : included"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/round_history_row_extra_circle_iv"
+        app:layout_constraintTop_toBottomOf="@+id/round_history_row_extra_circle_iv" />
+
+    <ImageView
+        android:layout_width="@dimen/d_15"
+        android:layout_height="@dimen/d_15"
+        android:layout_marginStart="@dimen/d_10"
+        android:src="@drawable/info_icon_green"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/round_history_row_handicap_details"
+        app:layout_constraintStart_toEndOf="@+id/round_history_row_handicap_details"
+        app:layout_constraintTop_toTopOf="@+id/round_history_row_handicap_details"
+        app:tint="@color/colorPrimary" />
+</androidx.constraintlayout.widget.ConstraintLayout>

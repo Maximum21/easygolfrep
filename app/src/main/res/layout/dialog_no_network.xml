@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_view"
+    android:background="@drawable/bg_bottom_sheet_item_corner"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txt_content"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_no_network"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_img_icon_no_network"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/content_no_network"
+        android:textColor="@color/colorTextDark"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        />
+    <Button
+        android:id="@+id/bt_try_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/try_again"
+        android:background="@android:color/transparent"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+</LinearLayout>

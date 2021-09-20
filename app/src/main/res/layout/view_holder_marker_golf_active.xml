@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_marker_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/size_holder_map_active"
+        android:layout_height="@dimen/size_holder_map_active"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/circle_white"
+        />
+
+    <ImageView
+        android:layout_width="3dp"
+        android:layout_height="3dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:src="@drawable/dot_white"
+        />
+
+</FrameLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VerificationCodeView">
+        <attr name="codeTextSize" format="dimension" />
+        <attr name="codeTextColor" format="color" />
+        <attr name="codeBottomIcon" format="reference" />
+        <attr name="codeViewCount" format="integer" />
+        <attr name="codeItemSpaceSize" format="dimension" />
+        <attr name="openKeyBoard" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="StartRattingView">
+        <attr name="numberRatting" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="WozFairwayGreen">
+        <attr name="title" format="string" />
+        <attr name="type" format="enum">
+            <enum name="fairway" value="0" />
+            <enum name="green" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <attr name="dampingRatio" format="float" />
+    <attr name="dotsColor" format="color" />
+    <attr name="dotsCornerRadius" format="dimension" />
+    <attr name="dotsSize" format="dimension" />
+    <attr name="dotsSpacing" format="dimension" />
+    <attr name="dotsStrokeColor" format="color" />
+    <attr name="dotsStrokeWidth" format="dimension" />
+    <attr name="dotsWidthFactor" format="float" />
+    <attr name="progressMode" format="boolean" />
+    <attr name="selectedDotColor" format="color" />
+    <attr name="stiffness" format="float" />
+
+    <declare-styleable name="WozSpringDotsIndicator">
+        <attr name="dotsColor" />
+        <attr name="dotsSize" />
+        <attr name="dotsSpacing" />
+        <attr name="dotsCornerRadius" />
+        <attr name="dotsStrokeWidth" />
+        <attr name="dotsStrokeColor" />
+        <attr name="stiffness" />
+        <attr name="dampingRatio" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyGolfToolbar">
+        <attr name="isLight" format="boolean" />
+        <attr name="isDoubleTap" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyGolfBottomNavigation">
+        <attr name="menu" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyGolfHeaderNavigation">
+        <attr name="sizeBezierBottom" format="dimension" />
+        <attr name="paddingHeader" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyGolfCountDown">
+        <attr name="titleCountDown" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyGolfButton">
+        <attr name="textButton" format="string" />
+        <attr name="isThemePrimary" format="boolean" />
+        <attr name="iconLeading" format="reference" />
+        <attr name="startColor" format="color" />
+        <attr name="endColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PlayerView">
+        <attr name="isPlayer" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RatingView">
+        <attr name="format" format="enum">
+            <enum name="text" value="0" />
+            <enum name="icon" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BurnLoadingView">
+        <attr name="auto_start" format="boolean" />
+        <attr name="duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyGolfScoringTableView">
+        <attr name="showHighlight" format="boolean" />
+        <attr name="expandView" format="boolean" />
+    </declare-styleable>
+</resources>

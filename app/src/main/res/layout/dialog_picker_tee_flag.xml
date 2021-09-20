@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/bg_border_white"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="25dp">
+
+    <ImageView
+        android:id="@+id/btClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_close_black_24"
+        app:tint="@color/colorHint"
+        android:contentDescription="@null"
+        android:layout_gravity="end"
+        />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_score_card"
+        android:textColor="#557142"
+        android:textAllCaps="true"
+        android:textAppearance="@style/AppTheme.WozFont"
+        android:gravity="center"
+        android:textSize="@dimen/font_title"
+        />
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/listOption"
+      android:layout_marginTop="15dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+</LinearLayout>

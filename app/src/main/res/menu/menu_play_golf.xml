@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionViewGreen"
+        android:title="@string/view_green"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/actionSuggestion"
+        android:title="@string/note"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/actionReportHole"
+        android:title="@string/report_hole"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/actionShare"
+        android:title="@string/share"
+        app:showAsAction="never"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        />
+
+    <item
+        android:id="@+id/actionEndGame"
+        android:title="@string/end_game"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/actionChangeToMeter"
+        android:title="@string/change_to_meter"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/actionChangeDefaultTee"
+        android:title="@string/change_default_tee"
+        app:showAsAction="never"
+        />
+
+</menu>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackgroundMainGray"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.round.RoundHistoryActivity">
+    <com.minhhop.easygolf.presentation.custom.EasyGolfHeaderNavigation
+        android:id="@+id/easyGolfHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sizeBezierBottom="@dimen/normal_margin"
+        app:paddingHeader="@dimen/small_margin"
+        >
+        <com.minhhop.easygolf.presentation.custom.EasyGolfToolbar
+            android:id="@+id/toolbarBack"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:isLight="true"
+            app:title="@string/round_history"
+            />
+    </com.minhhop.easygolf.presentation.custom.EasyGolfHeaderNavigation>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/normal_margin"
+        android:layout_marginTop="-15dp"
+        android:id="@+id/rv_round_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

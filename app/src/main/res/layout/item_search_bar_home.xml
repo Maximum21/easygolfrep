@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:layout_marginTop="@dimen/normal_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbarSearch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_marginStart="@dimen/normal_margin"
+    android:layout_marginEnd="@dimen/normal_margin"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="0dp"
+    >
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/small_padding"
+        android:textColorHint="@color/textColorDark"
+        android:textColor="@color/textColorDark"
+        android:textSize="@dimen/normal_font_size"
+        android:hint="@string/search_courses"
+        app:drawableStartCompat="@drawable/ic_location_pin"
+        android:drawablePadding="@dimen/small_padding"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/normal_margin"
+        style="@style/normal"
+        />
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/d_15"
+    android:background="@drawable/round_corners_background_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginStart="@dimen/d_15"
+        android:layout_marginTop="@dimen/d_15"
+        android:id="@+id/add_user_request_heading1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text=""
+        android:layout_width="0dp"
+        android:layout_marginEnd="@dimen/d_15"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="14sp"
+        android:layout_marginTop="@dimen/d_15"
+        app:layout_constraintTop_toBottomOf="@id/add_user_request_heading1"
+        android:id="@+id/add_user_request_heading2"
+        app:layout_constraintStart_toStartOf="@id/add_user_request_heading1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/d_15"
+        android:textColor="@color/colorBlack"
+        android:text="@string/additional_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+
+
+    <EditText
+        android:maxLength="140"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        android:padding="@dimen/d_10"
+        android:gravity="top"
+        android:hint="@string/_140_characters_maximum"
+        android:background="@drawable/etv_background_gray_round_corners"
+        android:id="@+id/add_user_request_etv"
+        app:layout_constraintTop_toBottomOf="@id/add_user_request_heading2"
+        app:layout_constraintStart_toStartOf="@id/add_user_request_heading2"
+        app:layout_constraintEnd_toEndOf="@id/add_user_request_heading2"
+        android:layout_marginTop="@dimen/d_15"
+        android:layout_width="0dp"
+        android:layout_height="140dp"/>
+
+    <TextView
+        android:id="@+id/add_user_send_req"
+        android:text="@string/send_request"
+        android:textAllCaps="true"
+        app:layout_constraintTop_toBottomOf="@id/add_user_request_etv"
+        app:layout_constraintStart_toStartOf="@id/add_user_request_etv"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        android:paddingTop="@dimen/d_10"
+        android:paddingBottom="@dimen/d_10"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/d_15"
+        android:layout_marginEnd="@dimen/d_15"
+        android:background="@drawable/background_easygolf_button"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:id="@+id/add_user_cancel_request"
+        android:text="@string/cancel"
+        android:textAllCaps="true"
+        app:layout_constraintTop_toBottomOf="@id/add_user_request_etv"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="@id/add_user_request_etv"
+        android:textColor="@color/colorDarkBlue2"
+        android:background="@drawable/easygolffollowbackground"
+        android:paddingTop="@dimen/d_10"
+        android:paddingBottom="@dimen/d_10"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/d_15"
+        android:layout_marginStart="@dimen/d_15"
+        android:textSize="14sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

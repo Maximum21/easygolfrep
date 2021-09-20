@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_marginTop="@dimen/d_10"
+    android:layout_marginBottom="@dimen/d_15"
+    android:layout_marginStart="@dimen/d_15"
+    android:layout_marginEnd="@dimen/d_15"
+    android:paddingBottom="@dimen/d_15"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/imgPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:contentDescription="@null"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_icon_start_chat"
+        />
+
+    <TextView
+        android:layout_marginTop="@dimen/d_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        android:paddingStart="@dimen/d_10"
+        android:paddingEnd="@dimen/d_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgPhoto"
+        android:text="@string/starting_conversation_chat"
+        android:layout_marginBottom="@dimen/d_10"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

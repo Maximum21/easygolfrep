@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.minhhop.easygolf.presentation.custom.EasyGolfHeaderNavigation
+        android:id="@+id/easyGolfHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sizeBezierBottom="@dimen/normal_margin"
+        app:paddingHeader="@dimen/small_margin"
+        >
+        <com.minhhop.easygolf.presentation.custom.EasyGolfToolbar
+            android:id="@+id/toolbarBack"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:isLight="true"
+            app:title="@string/gallery"
+            >
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textCounterSelected"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:text="@string/done_format"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/normal_font_size"
+                style="@style/normal"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/normal_margin"
+                android:layout_gravity="center|end"
+                />
+        </com.minhhop.easygolf.presentation.custom.EasyGolfToolbar>
+    </com.minhhop.easygolf.presentation.custom.EasyGolfHeaderNavigation>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listGallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/small_margin"
+        />
+</LinearLayout>

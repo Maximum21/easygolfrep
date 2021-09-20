@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/viewRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+       >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:statusBarScrim="@android:color/transparent"
+            app:titleEnabled="false"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            >
+            <ImageView
+                android:id="@+id/imgCourse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/placeholder"
+                android:scaleType="centerCrop"
+                android:contentDescription="@null"
+                android:transitionName="@string/transition_name"
+                />
+            <ImageView
+                android:id="@+id/iconUploadImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_photo_camera"
+                android:contentDescription="@string/transition_image"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                />
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolBarBack"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:contentInsetLeft="0dp"
+                android:contentInsetStart="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:contentInsetRight="0dp"
+                android:contentInsetEnd="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:text="@string/detail"
+                android:textColor="@color/colorWhite"
+                app:layout_collapseMode="pin"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/d_50"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/d_15"
+                android:layout_height="?android:attr/actionBarSize"
+                app:layout_collapseMode="parallax"
+                android:gravity="end"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/d_50"
+                android:orientation="horizontal"
+                app:layout_collapseParallaxMultiplier="1">
+                <Space
+                    android:id="@+id/spaceAddFriend"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center|end"
+                    />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="1">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="224dp" />
+
+                <RelativeLayout
+                    android:id="@+id/imageView_avatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d_15"
+                    android:layout_marginBottom="@dimen/d_10"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/actionPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_icon_direction"
+                            />
+                        <TextView
+                            android:id="@+id/txtMakePhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/direction"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/font_size_normal"
+                            />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/actionAddFriend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="@dimen/d_10"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline"
+                    app:layout_constraintStart_toEndOf="@id/imageView_avatar"
+                    tools:ignore="UseCompoundDrawables,UselessParent">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_add_user_white_clear" />
+
+                    <TextView
+                        android:id="@+id/txtAddFriend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_friend"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/font_size_normal" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/iconLayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="@dimen/d_10"
+                    android:paddingTop="@dimen/d_5"
+                    android:paddingBottom="@dimen/d_5"
+                    android:paddingStart="@dimen/d_10"
+                    android:paddingEnd="@dimen/d_10"
+                    android:visibility="gone"
+                    android:backgroundTint="#80000000"
+                    android:background="@drawable/background_input_chat"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/accept"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@null"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_icon_add" />
+                </FrameLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/d_15"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:transitionName="name"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textColor="#08080F"
+                        android:layout_marginStart="@dimen/d_5"
+                        android:layout_marginEnd="@dimen/d_5"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/viewStage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:paddingStart="@dimen/d_10"
+                        android:paddingEnd="0dp"
+                        android:visibility="visible"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#4D000000"
+                        android:background="@drawable/background_input_chat"
+                        >
+
+                        <TextView
+                            android:id="@+id/actionReject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reject"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/colorWhite"
+                            android:layout_marginEnd="@dimen/d_5"
+                            android:textSize="13sp"
+                            />
+                        <TextView
+                            android:id="@+id/actionAccept"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/accept"
+                            android:background="@drawable/background_input_chat"
+                            android:textColor="@color/colorWhite"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:paddingStart="@dimen/d_10"
+                            android:paddingTop="@dimen/d_5"
+                            android:paddingBottom="@dimen/d_5"
+                            android:paddingEnd="@dimen/d_10"
+                            android:layout_toEndOf="@id/actionReject"
+                            android:textSize="13sp"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtLocation"
+                    android:layout_marginTop="@dimen/d_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_location_on_24px"
+                    android:drawablePadding="@dimen/d_15"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_marginTop="@dimen/d_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_icon_access_time"
+                    android:drawablePadding="@dimen/d_15"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="@dimen/d_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/list_member"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#08080F"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listMember"
+                    android:layout_marginTop="@dimen/d_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/btPlayNewGround"
+                    android:layout_marginTop="@dimen/d_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/play_new_round"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/background_button_sign_in"
+                    />
+
+            </LinearLayout>
+
+            <Space
+                android:id="@+id/spaceLayer"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                />
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include layout="@layout/layout_loading_white"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

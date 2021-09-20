@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/round_corners_background_white">
+
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:id="@+id/create_post_tv"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/d_15"
+        android:layout_marginTop="@dimen/d_20"
+        android:textSize="14sp"
+        android:text="@string/create_post"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_marginEnd="@dimen/d_15"
+        android:textColor="@color/colorRed"
+        android:id="@+id/publish_post_tv"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/d_25"
+        android:textSize="14sp"
+        android:text="@string/post"
+        app:layout_constraintBottom_toBottomOf="@+id/create_post_tv"
+        app:layout_constraintTop_toTopOf="@+id/create_post_tv"
+        app:layout_constraintEnd_toStartOf="@+id/cancel_post_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:focusable="true"
+        android:clickable="true"
+        android:textColor="@color/textColorGray"
+        android:id="@+id/cancel_post_tv"
+        android:textStyle="bold"
+        android:layout_marginEnd="@dimen/d_20"
+        android:textSize="14sp"
+        android:text="@android:string/cancel"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/create_post_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/new_post_heading_iv"
+        android:layout_width="@dimen/d_25"
+        android:layout_height="@dimen/d_25"
+        android:layout_marginStart="@dimen/d_25"
+        android:layout_marginTop="@dimen/d_35"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:src="@drawable/laugh_emoji_gray_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/create_post_tv" />
+
+    <TextView
+        android:visibility="gone"
+        android:textColorHint="@color/colorBlack"
+        android:id="@+id/new_post_heading_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_15"
+        android:hint="@string/what_s_on_your_mind"
+        android:textColor="@color/textColorGray"
+        app:layout_constraintBottom_toBottomOf="@+id/new_post_heading_iv"
+        app:layout_constraintStart_toEndOf="@+id/new_post_heading_iv"
+        app:layout_constraintTop_toTopOf="@+id/new_post_heading_iv" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/new_post_attach_iv"
+        android:layout_width="@dimen/d_25"
+        android:layout_height="@dimen/d_20"
+        android:layout_marginStart="@dimen/d_25"
+        android:layout_marginEnd="@dimen/d_30"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:rotation="150"
+        android:rotationX="180"
+        android:src="@drawable/attach_icon_green"
+        app:layout_constraintBottom_toBottomOf="@+id/new_post_heading_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/new_post_heading_iv" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:padding="@dimen/d_15"
+        android:gravity="start"
+        android:textColorHint="@color/colorBlack"
+        android:hint="@string/what_s_on_your_mind"
+        android:layout_marginBottom="@dimen/d_25"
+        android:layout_marginTop="@dimen/d_20"
+        android:background="@drawable/round_corners_gray_borders_background_transparent"
+        app:layout_constraintBottom_toTopOf="@+id/new_post_photo_tv"
+        app:layout_constraintTop_toBottomOf="@id/create_post_tv"
+        app:layout_constraintEnd_toEndOf="@id/cancel_post_tv"
+        app:layout_constraintStart_toStartOf="@id/create_post_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+
+    <ImageView
+        android:layout_marginBottom="@dimen/d_15"
+        android:id="@+id/new_post_galary_iv"
+        android:layout_width="@dimen/d_25"
+        android:layout_height="@dimen/d_30"
+        android:layout_marginStart="@dimen/d_25"
+        android:layout_marginEnd="@dimen/d_20"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:src="@drawable/cam_icon_green"
+        app:layout_constraintBottom_toTopOf="@+id/new_post_camera_iv"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:textColorHint="@color/colorBlack"
+        android:id="@+id/new_post_photo_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_20"
+        android:hint="@string/photo_video"
+        android:textColor="@color/textColorGray"
+        app:layout_constraintBottom_toBottomOf="@+id/new_post_galary_iv"
+        app:layout_constraintStart_toEndOf="@+id/new_post_galary_iv"
+        app:layout_constraintTop_toTopOf="@+id/new_post_galary_iv" />
+    <ImageView
+        android:layout_marginBottom="@dimen/d_15"
+        android:id="@+id/new_post_camera_iv"
+        android:layout_width="@dimen/d_25"
+        android:layout_height="@dimen/d_30"
+        android:layout_marginStart="@dimen/d_25"
+        android:layout_marginEnd="@dimen/d_20"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:src="@drawable/cam_icon_green"
+        app:layout_constraintBottom_toTopOf="@+id/tag_user_iv"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:textColorHint="@color/colorBlack"
+        android:id="@+id/new_post_camera_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_20"
+        android:hint="@string/camera"
+        android:textColor="@color/textColorGray"
+        app:layout_constraintBottom_toBottomOf="@+id/new_post_camera_iv"
+        app:layout_constraintStart_toEndOf="@+id/new_post_camera_iv"
+        app:layout_constraintTop_toTopOf="@+id/new_post_camera_iv" />
+    <ImageView
+        android:layout_marginBottom="@dimen/d_15"
+        android:id="@+id/tag_user_iv"
+        android:layout_width="@dimen/d_25"
+        android:layout_height="@dimen/d_30"
+        android:layout_marginStart="@dimen/d_25"
+        android:layout_marginEnd="@dimen/d_20"
+        app:tint="@color/colorAccent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_add_user_white_clear"
+        app:layout_constraintBottom_toTopOf="@+id/new_post_loc_iv"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:textColorHint="@color/colorBlack"
+        android:id="@+id/new_post_tag_friends_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_20"
+        android:hint="@string/tag_friends"
+        android:textColor="@color/textColorGray"
+        app:layout_constraintBottom_toBottomOf="@+id/tag_user_iv"
+        app:layout_constraintStart_toEndOf="@+id/tag_user_iv"
+        app:layout_constraintTop_toTopOf="@+id/tag_user_iv" />
+    <ImageView
+        android:layout_marginBottom="@dimen/d_25"
+        android:id="@+id/new_post_loc_iv"
+        android:layout_width="@dimen/d_25"
+        android:layout_height="@dimen/d_30"
+        android:layout_marginStart="@dimen/d_25"
+        android:layout_marginEnd="@dimen/d_20"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_location_pin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:textColorHint="@color/colorBlack"
+        android:id="@+id/new_post_tag_course_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_20"
+        android:hint="@string/tag_a_course"
+        android:textColor="@color/textColorGray"
+        app:layout_constraintBottom_toBottomOf="@+id/new_post_loc_iv"
+        app:layout_constraintStart_toEndOf="@+id/new_post_loc_iv"
+        app:layout_constraintTop_toTopOf="@+id/new_post_loc_iv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

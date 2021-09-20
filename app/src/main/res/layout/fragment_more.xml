@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgSettingAccount"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            app:layout_collapseMode="parallax"
+            app:layout_collapseParallaxMultiplier="1">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolBarBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentInsetStart="0dp"
+                app:titleMargin="0dp"
+                app:titleTextColor="@color/colorWhite"
+                app:titleTextAppearance="@style/Toolbar.TitleText"
+                app:contentInsetStartWithNavigation="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="1"/>
+
+
+            <RelativeLayout
+                android:id="@+id/layoutAvatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_white"
+                android:padding="2dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/txtName"
+                android:layout_marginBottom="@dimen/d_30"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_icon_user_default"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textAppearance="@style/AppTheme.WozFont.Bold"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="@+id/guideline"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginBottom="@dimen/d_30"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/viewAccountSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_icon_user_gray"
+                    android:contentDescription="@null"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_settings"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:textSize="@dimen/font_normal"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorTextNormal"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actionChangePassword"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_icon_password_gray"
+                    android:contentDescription="@null"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_password"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:textSize="@dimen/font_normal"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorTextNormal"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewRuleGolf"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_icon_golfrule"
+                    android:contentDescription="@null"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/golf_rules"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:textSize="@dimen/font_normal"
+                    android:textColor="@color/colorTextNormal"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/viewAboutUs"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_icon_info"
+                    android:contentDescription="@null"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_us"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:textSize="@dimen/font_normal"
+                    android:textColor="@color/colorTextNormal"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/viewTerms"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_icon_policy"
+                    android:contentDescription="@null"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_conditions"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:textSize="@dimen/font_normal"
+                    android:textColor="@color/colorTextNormal"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/viewPolicy"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_icon_privacy"
+                    android:contentDescription="@null"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacy_policy"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:textSize="@dimen/font_normal"
+                    android:textColor="@color/colorTextNormal"
+                    android:textAllCaps="true"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="height_input_login">45dp</dimen>
+    <dimen name="font_small">11sp</dimen>
+    <dimen name="font_normal">12sp</dimen>
+    <dimen name="font_title">18sp</dimen>
+    <dimen name="font_large">15sp</dimen>
+    <dimen name="font_menu">15sp</dimen>
+    <dimen name="font_size_small">9sp</dimen>
+    <dimen name="font_size_normal">12sp</dimen>
+    <dimen name="size_icon_social">17dp</dimen>
+
+    <dimen name="margin_top_safe_login">50dp</dimen>
+    <dimen name="padding_top_safe_login">30dp</dimen>
+    <dimen name="margin_top_safe_flash">100dp</dimen>
+    <dimen name="size_logo">180dp</dimen>
+    <dimen name="font_size_slogan">14sp</dimen>
+    <dimen name="padding_register">20dp</dimen>
+    <dimen name="padding_unregister">30dp</dimen>
+
+    <dimen name="margin_top_safe_register">55dp</dimen>
+
+    <dimen name="button_submit_width">200dp</dimen>
+    <dimen name="button_submit_height">50dp</dimen>
+
+    <!--start value for verify code-->
+    <dimen name="code_verify_bottom_icon_width">45dp</dimen>
+    <dimen name="code_verify_bottom_icon_height">1dp</dimen>
+    <dimen name="code_text_size">18sp</dimen>
+    <dimen name="code_item_space_size">19dp</dimen>
+    <!--end value for verify code-->
+
+    <dimen name="width_item_news">100dp</dimen>
+    <dimen name="height_item_video">120dp</dimen>
+    <dimen name="size_logo_small">100dp</dimen>
+
+    <dimen name="size_img_item_course">85dp</dimen>
+
+    <dimen name="height_img_item_detail_course">170dp</dimen>
+
+    <dimen name="size_icon_setting_map">40dp</dimen>
+    <dimen name="margin_bottom_segment_map">25dp</dimen>
+
+    <dimen name="text_size_green">45sp</dimen>
+    <dimen name="text_size_green_selected">65sp</dimen>
+
+    <!--for navigation bottom-->
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">11sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">11sp</dimen>
+
+    <!--for table view score-->
+    <dimen name="table_view_cell_height">40dp</dimen>
+    <dimen name="table_view_cell_width">50dp</dimen>
+    <dimen name="table_view_cell_view_size_width">25dp</dimen>
+    <dimen name="table_view_cell_view_size_height">40dp</dimen>
+    <dimen name="table_view_row_header_width">100dp</dimen>
+    <dimen name="table_view_default_text_size">12sp</dimen>
+    <dimen name="table_view_text_size_header">11sp</dimen>
+
+    <dimen name="margin_top_coming_soon">150dp</dimen>
+
+    <!--For map-->
+    <dimen name="size_holder_map">40dp</dimen>
+    <dimen name="size_dot_holder_map">4dp</dimen>
+
+    <dimen name="size_holder_map_active">50dp</dimen>
+    <dimen name="size_holder_map_active_dis">100dp</dimen>
+    <dimen name="size_view_distance_golf">70dp</dimen>
+    <dimen name="font_size_big_brother_point">25sp</dimen>
+    <dimen name="font_size_big_brother_max_point">15sp</dimen>
+    <dimen name="font_size_point">21sp</dimen>
+    <dimen name="font_size_max_point">13sp</dimen>
+    <dimen name="d_15">15dp</dimen>
+    <dimen name="d_20">20dp</dimen>
+    <dimen name="d_30">30dp</dimen>
+    <dimen name="d_35">35dp</dimen>
+    <dimen name="d_40">40dp</dimen>
+    <dimen name="d_45">45dp</dimen>
+    <dimen name="d_50">50dp</dimen>
+    <dimen name="d_60">60dp</dimen>
+    <dimen name="d_70">70dp</dimen>
+    <dimen name="d_25">25dp</dimen>
+    <dimen name="d_55">55dp</dimen>
+    <dimen name="d_10">10dp</dimen>
+    <dimen name="d_100">100dp</dimen>
+    <dimen name="d_3">3dp</dimen>
+    <dimen name="d_5">5dp</dimen>
+    <dimen name="d_2">2dp</dimen>
+    <dimen name="d_7">7dp</dimen>
+    <dimen name="size_item_fairway_green">30dp</dimen>
+    <dimen name="size_item_center_fairway_green">15dp</dimen>
+
+    <dimen name="font_name_chat">14sp</dimen>
+    <dimen name="font_info_chat">12sp</dimen>
+
+    <dimen name="min_width_distance">40dp</dimen>
+    <dimen name="min_height_distance">40dp</dimen>
+    <dimen name="font_size_name_distance">10sp</dimen>
+    <dimen name="font_size_value_distance">23sp</dimen>
+    <dimen name="font_size_value_distance_selected">27sp</dimen>
+
+    <dimen name="height_item_schedule">170dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="image_width">110dp</dimen>
+    <dimen name="image_small_width">32dp</dimen>
+
+    <dimen name="margin_bottom_item_chat">1dp</dimen>
+    <dimen name="height_default_image_chat">300dp</dimen>
+    <dimen name="height_default_typing_chat">100dp</dimen>
+    <dimen name="default_column_header_height">40dp</dimen>
+
+
+<!--    new update-->
+    <dimen name="large_margin">30dp</dimen>
+    <dimen name="margin_list_home">17dp</dimen>
+    <dimen name="margin_list_home_shadow">10dp</dimen>
+    <dimen name="normal_margin">15dp</dimen>
+    <dimen name="small_margin">5dp</dimen>
+    <dimen name="little_margin">10dp</dimen>
+    <dimen name="large_padding">20dp</dimen>
+    <dimen name="normal_padding">15dp</dimen>
+    <dimen name="small_padding">10dp</dimen>
+
+    <dimen name="title_font_size">20sp</dimen>
+    <dimen name="large_font_size">24sp</dimen>
+    <dimen name="huge_font_size">30sp</dimen>
+    <dimen name="x_normal_font_size">18sp</dimen>
+    <dimen name="normal_font_size">15sp</dimen>
+    <dimen name="x_small_font_size">14sp</dimen>
+    <dimen name="small_font_size">12sp</dimen>
+    <dimen name="limit_small_font_size">11sp</dimen>
+    <dimen name="max_limit_small_font_size">11sp</dimen>
+    <dimen name="x_limit_small_font_size">13sp</dimen>
+    <dimen name="bottom_navigation_height">56dp</dimen>
+    <dimen name="shadow_bottom_navigation">3dp</dimen>
+    <dimen name="bottom_navigation_height_bezier">13dp</dimen>
+    <dimen name="easygolf_bottom_navigation_height_bezier">69dp</dimen>
+    <dimen name="easygolf_bottom_navigation_margin_top">81dp</dimen>
+    <dimen name="easygolf_size_bezier_bottom_default">10dp</dimen>
+    <dimen name="easygolf_size_bezier_bottom_margin_from_header_default">-10dp</dimen>
+    <dimen name="width_item_course_nearby">350dp</dimen>
+    <dimen name="height_item_course_nearby">150dp</dimen>
+
+    <dimen name="size_img_item_course_width">125dp</dimen>
+    <dimen name="size_img_item_course_height">85dp</dimen>
+    <dimen name="height_image_course_detail">250dp</dimen>
+
+    <dimen name="size_player">50dp</dimen>
+    <dimen name="stroke_bubble_player">3dp</dimen>
+    <dimen name="size_radius_player">25dp</dimen>
+    <dimen name="size_view_rate_overview">40dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="card_elevation">3dp</dimen>
+
+    <dimen name="default_size_marker">50dp</dimen>
+    <dimen name="peekHeightPlayGolf">30dp</dimen>
+    <dimen name="button_woz_size">45dp</dimen>
+    <dimen name="size_club_photo_default">70dp</dimen>
+    <dimen name="size_default_star_rating">40dp</dimen>
+
+    <dimen name="size_item_club_default">80dp</dimen>
+
+    <dimen name="size_avatar_user_scorecard_vertical_default">25dp</dimen>
+    <dimen name="size_avatar_user_scorecard_horizontal_default">45dp</dimen>
+    <dimen name="height_row_scorecard_vertical_default">40dp</dimen>
+    <dimen name="height_row_scorecard_horizontal_default">60dp</dimen>
+</resources>

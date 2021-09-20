@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/table_view_row_header_width"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/d_5"
+    android:paddingEnd="0dp"
+    >
+
+    <TextView
+        android:id="@+id/txtName"
+        android:paddingTop="@dimen/d_2"
+        android:paddingBottom="@dimen/d_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:text="@string/lorem"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/table_view_text_size_header"
+       />
+
+    <LinearLayout
+        android:id="@+id/layoutScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:paddingTop="@dimen/d_2"
+        android:paddingBottom="@dimen/d_2"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/txtTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="start|center"
+            android:maxLines="1"
+            android:text="@string/lorem"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/d_5"
+            />
+
+        <TextView
+            android:id="@+id/txtBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="start|center"
+            android:maxLines="1"
+            android:text="@string/lorem"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp"
+            android:layout_marginEnd="@dimen/d_5"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="46dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:background="@color/colorDiver"/>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/course_nearby"
+        android:textSize="@dimen/title_font_size"
+        android:textColor="@color/textColorDark"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/normal_margin"
+        app:autoSizeMaxTextSize="@dimen/title_font_size"
+        style="@style/bold"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/normal_margin"
+        android:id="@+id/listClubNearby"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recommend"
+        android:textSize="@dimen/title_font_size"
+        android:textColor="@color/textColorDark"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/normal_margin"
+        app:autoSizeMaxTextSize="@dimen/title_font_size"
+        style="@style/bold"
+        android:layout_marginBottom="@dimen/normal_margin"
+        />
+</LinearLayout>

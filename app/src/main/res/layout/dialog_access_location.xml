@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/viewRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/large_padding"
+    android:paddingTop="@dimen/large_padding"
+    android:paddingEnd="@dimen/large_padding"
+    app:cardCornerRadius="10dp"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/large_padding"
+        android:background="@drawable/background_border_white"
+        >
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/enable_locations"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_access_location"
+            android:gravity="center"
+            android:textSize="@dimen/x_normal_font_size"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content_access_location"
+            android:gravity="center"
+            android:textColor="@color/colorTextNormal"
+            android:textSize="@dimen/small_font_size"
+            />
+
+
+        <com.minhhop.easygolf.presentation.custom.EasyGolfButton
+            android:id="@+id/btEnableLocation"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_width="@dimen/button_submit_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:textButton="@string/enable"
+            />
+
+        <TextView
+            android:id="@+id/btClose"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/not_now"
+            android:textAllCaps="true"
+            android:textColor="@color/colorButtonSignIn"
+            android:textSize="@dimen/normal_font_size"
+            />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

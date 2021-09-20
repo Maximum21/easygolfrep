@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <ImageView
+        android:id="@+id/viewClose"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_icon_close_out"
+        app:tint="@color/textColorDark"
+        android:contentDescription="@null"
+        android:adjustViewBounds="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/normal_margin"
+        android:layout_marginStart="@dimen/small_margin"
+        />
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/viewClose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/normal_margin"
+            >
+            <ImageView
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_sms"
+                android:contentDescription="@null"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/small_margin"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/feedback_title"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="@dimen/title_font_size"
+                style="@style/bold"
+                android:gravity="center"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/feedback_content"
+                android:textSize="@dimen/normal_font_size"
+                android:textAlignment="center"
+                style="@style/normal"
+                android:textColor="@color/textColorGray"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btSubject"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/general_question"
+                android:textColor="@color/textColorGray"
+                style="@style/normal"
+                android:textSize="@dimen/normal_font_size"
+                app:drawableTint="@color/textColorGray"
+                app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_black_18"
+                />
+
+            <View
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDiver"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textMessage"
+                android:hint="@string/type_your_message"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/background_type_feedback"
+                android:gravity="top"
+                android:padding="@dimen/normal_padding"
+                android:textColor="@color/textColorGray"
+                style="@style/normal"
+                android:textSize="@dimen/normal_font_size"
+                />
+            <com.minhhop.easygolf.presentation.custom.EasyGolfButton
+                android:id="@+id/btSendFeedback"
+                android:layout_marginTop="@dimen/large_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/large_margin"
+                android:layout_marginEnd="@dimen/large_margin"
+                app:textButton="@string/send"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <include layout="@layout/layout_mask"/>
+
+</RelativeLayout>

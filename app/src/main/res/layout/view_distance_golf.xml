@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/size_view_distance_golf"
+    android:layout_height="@dimen/size_view_distance_golf"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background_view_distance_golf"
+    android:padding="5dp"
+    android:gravity="center">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mTxtDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/colorWhite"
+        app:autoSizeTextType="uniform"
+        android:maxLines="1"
+        />
+    <TextView
+        android:id="@+id/mTxtUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yard_shortcut"
+        android:textSize="12sp"
+        android:textColor="#8e8e8e"
+        android:layout_marginTop="-5dp"
+        />
+</LinearLayout>

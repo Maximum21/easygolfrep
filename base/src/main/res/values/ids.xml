@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolBarHome" type="id"/>
+    <item name="drawerLayout" type="id"/>
+    <item name="navView" type="id"/>
+    <item name="toolBarBack" type="id"/>
+    <item name="titleToolBar" type="id"/>
+    <item name="toolBarClose" type="id"/>
+    <item name="btClose" type="id"/>
+    <item name="layoutLoading" type="id"/>
+</resources>

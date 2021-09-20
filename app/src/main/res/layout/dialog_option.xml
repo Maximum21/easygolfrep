@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_border_white"
+    android:layout_margin="20dp"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/options"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDiver"
+        />
+
+    <TextView
+        android:id="@+id/btCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/camera"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDiver"
+        />
+
+    <TextView
+        android:id="@+id/btGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gallery"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/normal_margin"
+    android:layout_marginEnd="@dimen/normal_margin"
+    android:layout_marginTop="@dimen/normal_margin">
+
+    <TextView
+        android:id="@+id/course_row_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/course_row_type_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/course_row_type_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_10"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/course_row_address_tv"
+        app:layout_constraintStart_toStartOf="@+id/course_row_name_tv"
+        app:layout_constraintTop_toBottomOf="@+id/course_row_name_tv" />
+
+    <TextView
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:id="@+id/course_row_address_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_10"
+        android:layout_marginBottom="@dimen/d_10"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/extra_line_search_course_row"
+        app:layout_constraintEnd_toStartOf="@+id/course_row_holes_tv"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/course_row_name_tv"
+        app:layout_constraintTop_toBottomOf="@+id/course_row_type_tv" />
+
+    <TextView
+        android:layout_marginStart="@dimen/d_10"
+        android:id="@+id/course_row_holes_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_10"
+        android:layout_marginEnd="@dimen/d_10"
+        android:layout_marginBottom="@dimen/d_10"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/extra_line_search_course_row"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/course_row_address_tv"
+        app:layout_constraintTop_toBottomOf="@+id/course_row_type_tv" />
+    <ImageView
+        android:layout_marginTop="@dimen/d_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/extra_line_search_course_row"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/table_gray"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

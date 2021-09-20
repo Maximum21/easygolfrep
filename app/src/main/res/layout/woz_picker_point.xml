@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginBottom="@dimen/d_10"
+    >
+    <GridLayout
+        android:id="@+id/layoutContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/bigBrother"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/colorRed"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/txtBigBrother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/color_point_score"
+        android:textSize="@dimen/font_size_big_brother_point"
+        />
+    <TextView
+        android:id="@+id/txtMaxBigBrother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/color_point_score"
+        android:textSize="@dimen/font_size_big_brother_max_point"
+        />
+</FrameLayout>
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    >
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/bold"
+        android:text="@string/course_photo"
+        android:textSize="@dimen/normal_font_size"
+        android:padding="@dimen/normal_margin"
+        android:textColor="@color/textColorHover"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listClubPhotos"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/little_margin"
+        android:layout_marginEnd="@dimen/little_margin"
+        />
+
+</LinearLayout>

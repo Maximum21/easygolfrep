@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/viewRoot"
+    android:layout_marginBottom="@dimen/small_padding"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    android:layout_marginStart="@dimen/normal_margin"
+    android:layout_marginEnd="@dimen/normal_margin"
+    app:cardElevation="0dp"
+    app:contentPadding="@dimen/normal_padding"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/imgCourse"
+            android:contentDescription="@string/app_name"
+            android:layout_width="@dimen/size_img_item_course_width"
+            android:layout_height="@dimen/size_img_item_course_height"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:transitionName="@string/transition_image"
+            tools:ignore="UnusedAttribute"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            >
+
+            <TextView
+                android:id="@+id/txtNameCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/AppTheme.WozFont"
+                android:textColor="@color/textColorHover"
+                android:textSize="15sp"
+                style="@style/bold"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.minhhop.easygolf.presentation.support.StarRattingView
+                    android:id="@+id/viewRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    app:tint="@color/textColorGray"
+                    app:srcCompat="@drawable/ic_location_pin"
+                    />
+                <TextView
+                    android:id="@+id/textLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/AppTheme.WozFont"
+                    android:textColor="#878787"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:textSize="11sp"
+                    tools:ignore="SmallSp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

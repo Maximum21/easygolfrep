@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/containerView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_mask_course_detail"
+    android:backgroundTint="@color/colorWhite"
+    android:paddingTop="@dimen/large_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/large_margin"
+    android:layout_marginStart="@dimen/normal_margin"
+    android:layout_marginEnd="@dimen/normal_margin"
+   />

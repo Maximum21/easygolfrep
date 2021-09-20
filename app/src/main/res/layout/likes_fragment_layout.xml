@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/d_10"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/d_5"
+        android:id="@+id/back_btn"
+        android:src="@drawable/baseline_arrow_back_black_24"
+        android:layout_width="@dimen/d_40"
+        android:layout_height="@dimen/d_30"/>
+    <TextView
+        android:layout_marginStart="@dimen/d_15"
+        app:layout_constraintBottom_toBottomOf="@+id/back_btn"
+        app:layout_constraintStart_toEndOf="@+id/back_btn"
+        app:layout_constraintTop_toTopOf="@+id/back_btn"
+        android:textStyle="bold"
+        android:id="@+id/likes_fragment_heading_tv"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="@dimen/d_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/back_btn"
+        android:id="@+id/likes_fragment_rv"
+        app:layout_constraintTop_toBottomOf="@+id/back_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

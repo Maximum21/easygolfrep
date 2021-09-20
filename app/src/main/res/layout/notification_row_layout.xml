@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="@dimen/d_10"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/notificationHeadingTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="@dimen/d_5"
+        app:layout_constraintStart_toStartOf="@+id/notificationHeadingTv"
+        app:layout_constraintEnd_toEndOf="@+id/notificationHeadingTv"
+        app:layout_constraintTop_toBottomOf="@+id/notificationHeadingTv"
+        android:id="@+id/notification_foreground_layout"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/notification_profile_iv"
+            android:layout_width="@dimen/d_35"
+            android:layout_height="@dimen/d_35"
+            android:layout_marginTop="@dimen/d_10"
+            android:layout_marginEnd="@dimen/d_20"
+            android:layout_marginBottom="@dimen/d_10"
+            android:src="@drawable/placeholder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_marginEnd="@dimen/d_15"
+            android:id="@+id/player_name_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_15"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/notification_notifier_iv"
+            app:layout_constraintStart_toEndOf="@id/notification_profile_iv"
+            app:layout_constraintTop_toTopOf="@+id/notification_profile_iv"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:layout_marginEnd="@dimen/d_15"
+            android:id="@+id/player_comment_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="@dimen/d_10"
+            android:text=""
+            android:textColor="@color/textColorGray"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/player_name_tv"
+            app:layout_constraintTop_toBottomOf="@id/player_name_tv" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:src="@color/colorRed"
+            android:id="@+id/notification_notifier_iv"
+            android:layout_marginEnd="@dimen/d_15"
+            app:layout_constraintTop_toTopOf="@+id/notification_profile_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="@dimen/d_5"
+            android:layout_height="5dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

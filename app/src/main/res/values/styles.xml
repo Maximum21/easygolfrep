@@ -1,0 +1,132 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="ThemeAppDark" parent="AppTheme">
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorBlack</item>
+
+    </style>
+
+    <style name="AppTheme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="SegmentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+<!--        <item name="colorPrimary">@android:color/transparent</item>-->
+<!--        <item name="colorPrimaryDark">@android:color/transparent</item>-->
+<!--        <item name="colorAccent">@android:color/transparent</item>-->
+        <item name="android:textColorLink">@color/colorWhite</item>
+<!--        <item name="android:windowNoTitle">true</item>-->
+<!--        <item name="android:borderlessButtonStyle">true</item>-->
+<!--        <item name="android:windowContentOverlay">@null</item>-->
+        <item name="android:windowBackground">@color/colorBlack</item>
+    </style>
+    <style name="OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_icon_more</item>
+    </style>
+
+    <!--for window translucent status-->
+    <style name="AppTheme.window.translucent.status" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="NoShadowButton" parent="android:style/Widget.Button">
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="AppTheme.WozFont" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/open_sans_regular</item>
+    </style>
+
+    <style name="AppTheme.WozFont.Bold" parent="AppTheme.WozFont">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.WozFont.Apple" parent="AppTheme.WozFont">
+        <item name="android:fontFamily">@font/apple_chancery</item>
+    </style>
+
+
+    <style name="ToolbarThemeWhite" parent="AppTheme">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="actionMenuTextColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Theme_Dialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowMinWidthMajor">80%</item>
+    </style>
+
+    <!--FullScreen-->
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.YourPopup" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:colorBackground">@color/colorBackgroundMenu</item>
+        <item name="android:tint">@color/colorWhite</item>
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+    </style>
+
+    <style name="animDialog">
+        <item name="android:windowEnterAnimation">@anim/slide_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/slide_dialog_exit</item>
+    </style>
+
+    <style name="WozDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+<!--    update-->
+    <style name="normal">
+        <item name="android:fontFamily">@font/oxy_vietnam</item>
+        <item name="fontFamily">@font/oxy_vietnam</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="bold">
+        <item name="android:fontFamily">@font/oxy_vietnam_bold</item>
+        <item name="fontFamily">@font/oxy_vietnam_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="easyGolfTab" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:textSize">@dimen/normal_font_size</item>
+        <item name="fontFamily">@font/oxy_vietnam_bold</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+    <style name="Widget.AppTheme.BottomSheet" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

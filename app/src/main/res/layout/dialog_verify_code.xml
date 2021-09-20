@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_border_white"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="25dp"
+    android:layout_margin="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/btClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_close_black_24"
+        android:tint="@color/colorHint"
+        android:layout_gravity="end"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/validate_otp"
+        android:textColor="@color/colorButtonSignIn"
+        android:textAppearance="@style/AppTheme.WozFont"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/mTxtOtpDetail"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/validate_otp_detail"
+        android:textColor="@color/colorHint"
+        android:textAppearance="@style/AppTheme.WozFont"
+        android:textSize="@dimen/font_size_normal"
+        android:textAlignment="center"
+        />
+
+
+    <com.minhhop.easygolf.presentation.verify_code.VerificationCodeView
+        android:id="@+id/verifyCodeView"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:codeViewCount="4"
+        app:openKeyBoard="true"
+        />
+
+
+    <Button
+        android:id="@+id/btSubmit"
+        android:layout_marginTop="25dp"
+        android:layout_width="@dimen/button_submit_width"
+        android:layout_height="@dimen/button_submit_height"
+        android:background="@drawable/background_submit_selector"
+        android:text="@string/submit"
+        android:layout_gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="@style/AppTheme.WozFont"
+        android:enabled="true"
+        />
+
+</LinearLayout>

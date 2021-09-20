@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        >
+        <com.minhhop.easygolf.presentation.custom.EasyGolfToolbar
+            android:id="@+id/toolbarBack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            app:isLight="true"
+            app:title=""
+            android:theme="@style/ToolbarThemeWhite"
+            />
+        <ImageView
+            android:layout_width="@dimen/size_logo_small"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:contentDescription="@string/app_name"
+            />
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <androidx.core.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <TextView
+               android:id="@+id/txtContent"
+               android:layout_marginTop="15dp"
+               android:padding="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:scrollbars="vertical"
+               android:textAppearance="@style/AppTheme.WozFont"
+               />
+
+       </androidx.core.widget.NestedScrollView>
+
+
+        <include layout="@layout/layout_mask"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

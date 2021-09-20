@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+        <include layout="@layout/layout_toolbar_back"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/txtPlusPeople"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_view_plus_white"
+                android:layout_toEndOf="@id/imgAvatar1"
+                android:layout_marginStart="-10dp"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:textSize="12sp"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAvatar1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_full_white"
+                android:src="@drawable/bg"
+                android:padding="3dp"
+                android:layout_toEndOf="@id/imgAvatar"
+                android:layout_marginStart="-10dp"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_full_white"
+                android:src="@drawable/bg"
+                android:padding="3dp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/editNameGroup"
+            android:layout_marginTop="@dimen/d_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:id="@+id/txtNameGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                app:srcCompat="@drawable/ic_icon_edit_gray"
+                android:contentDescription="@null"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtParticipant"
+            android:layout_marginTop="@dimen/d_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_15"
+            android:layout_marginEnd="@dimen/d_15"
+            android:text="@string/members_chat"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/d_10"
+            android:id="@+id/listParticipant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/actionAddParticipant"
+            android:layout_marginTop="@dimen/d_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_15"
+            android:layout_marginEnd="@dimen/d_15"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_icon_add"
+                android:contentDescription="@null"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_participants"
+                android:textColor="@color/colorTextDark"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/d_10"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/d_15"
+            android:layout_marginEnd="@dimen/d_15"
+            android:layout_marginTop="@dimen/d_15"
+            android:background="@color/colorDiver"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/d_15"
+            android:layout_marginEnd="@dimen/d_15"
+            android:layout_marginTop="@dimen/d_10"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/d_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notifications"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="16sp"
+                    android:layout_toStartOf="@id/switchNotification"
+                    />
+
+                <Switch
+                    android:id="@+id/switchNotification"
+                    android:layout_width="wrap_content"
+                    android:minWidth="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/actionLeaveGroup"
+                android:layout_marginTop="@dimen/d_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/leave_group"
+                android:textColor="@color/colorTextDark"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_loading"/>
+</RelativeLayout>

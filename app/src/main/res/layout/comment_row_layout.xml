@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/post_profile_iv"
+        android:layout_width="@dimen/d_35"
+        android:layout_height="@dimen/d_35"
+        android:layout_marginTop="@dimen/d_10"
+        android:layout_marginEnd="@dimen/d_20"
+        android:layout_marginBottom="@dimen/d_10"
+        android:src="@drawable/placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_20"
+        android:text=""
+        android:maxLines="1"
+        android:layout_marginEnd="@dimen/d_15"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/publish_time_tv"
+        app:layout_constraintBottom_toTopOf="@id/player_comment_tv"
+        app:layout_constraintStart_toEndOf="@id/post_profile_iv"
+        app:layout_constraintTop_toTopOf="@+id/post_profile_iv"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:layout_marginEnd="@dimen/d_15"
+        android:id="@+id/player_comment_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="@dimen/d_10"
+        android:text=""
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/player_name_tv"
+        app:layout_constraintTop_toBottomOf="@id/player_name_tv" />
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/publish_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_20"
+        android:layout_marginEnd="@dimen/d_15"
+        android:text=""
+        android:textColor="@color/textColorGray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/player_name_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/player_name_tv" />
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/player_like_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_10"
+        android:maxLines="1"
+        android:text="@string/like"
+        android:textColor="@color/textColorGray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/publish_time_tv"
+        app:layout_constraintStart_toEndOf="@id/publish_time_tv"
+        app:layout_constraintTop_toTopOf="@id/publish_time_tv" />
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/player_reply_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_20"
+        android:maxLines="1"
+        android:text="@string/reply"
+        android:textColor="@color/textColorGray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/player_like_btn"
+        app:layout_constraintStart_toEndOf="@id/player_like_btn"
+        app:layout_constraintTop_toTopOf="@id/player_like_btn" />
+    <TextView
+        android:id="@+id/tv_publish_new"
+        android:layout_marginStart="@dimen/d_20"
+        android:text=""
+        android:textColor="@color/textColorGray"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/player_comment_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

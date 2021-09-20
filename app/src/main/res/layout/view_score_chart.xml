@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <TextView
+        android:id="@+id/maxValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/one_hundred"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:id="@+id/viewDriverTop"
+        android:layout_marginTop="@dimen/d_5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDiver"
+        app:layout_constraintTop_toBottomOf="@id/maxValue"
+        />
+
+
+    <TextView
+        android:id="@+id/minValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d_5"
+        android:text="@string/zero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/viewDriverBottom"
+        />
+
+    <View
+        android:id="@+id/viewDriverBottom"
+        android:layout_marginTop="@dimen/d_5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDiver"
+        app:layout_constraintBottom_toTopOf="@id/layoutIcon"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/layoutIcon"
+        app:layout_constraintTop_toBottomOf="@id/viewDriverBottom"
+        app:layout_constraintTop_toTopOf="@id/viewDriverTop"
+        android:layout_marginStart="@dimen/d_20"
+        android:layout_marginEnd="@dimen/d_20"
+        >
+
+        <View
+            android:id="@+id/viewAlbatross"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/color_flag_yellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.13" />
+
+        <View
+            android:id="@+id/viewMarginZero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/viewAlbatross"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.015" />
+
+        <View
+            android:id="@+id/viewEagle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/viewMarginZero"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.13" />
+
+        <View
+            android:id="@+id/viewMarginOne"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/viewEagle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.015" />
+
+        <View
+            android:id="@+id/viewBirdie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#F75332"
+            app:layout_constraintStart_toEndOf="@id/viewMarginOne"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.13" />
+
+        <View
+            android:id="@+id/viewMarginTwo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/viewBirdie"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.015" />
+
+        <View
+            android:id="@+id/viewPar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#B6B6B6"
+            app:layout_constraintStart_toEndOf="@id/viewMarginTwo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.13" />
+
+        <View
+            android:id="@+id/viewMarginThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/viewPar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.015" />
+
+        <View
+            android:id="@+id/viewBogey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#3661A4"
+            app:layout_constraintStart_toEndOf="@id/viewMarginThree"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.13" />
+
+        <View
+            android:id="@+id/viewMarginFour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/viewBogey"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.015" />
+
+        <View
+            android:id="@+id/view2Bogey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#767676"
+            app:layout_constraintStart_toEndOf="@id/viewMarginFour"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.13" />
+
+        <View
+            android:id="@+id/viewMarginFive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/view2Bogey"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.015" />
+
+        <View
+            android:id="@+id/viewOthers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlack"
+            app:layout_constraintStart_toEndOf="@id/viewMarginFive"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.13" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/d_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/minValue"
+        android:layout_marginStart="@dimen/d_20"
+        android:layout_marginEnd="@dimen/d_20"
+        >
+        <LinearLayout
+            android:id="@+id/viewAlbatrossIcon"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            app:layout_constraintWidth_percent="0.13" >
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bg_border_white"
+                android:backgroundTint="@color/color_flag_yellow"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txtAlbatross"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/albatross"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center"
+                android:textSize="8sp"
+                tools:ignore="SmallSp" />
+            <TextView
+                android:id="@+id/txtPercentAlbatross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/viewMarginZeroIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/color_flag_yellow"
+            app:layout_constraintStart_toEndOf="@id/viewAlbatrossIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.015" />
+        <LinearLayout
+            android:id="@+id/viewEagleIcon"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/viewMarginZeroIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            app:layout_constraintWidth_percent="0.13" >
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bg_border_white"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eagle"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                />
+            <TextView
+                android:id="@+id/txtPercentEagle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/viewMarginOneIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/color_flag_yellow"
+            app:layout_constraintStart_toEndOf="@id/viewEagleIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.015" />
+
+        <LinearLayout
+            android:id="@+id/viewBirdieIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/viewMarginOneIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.13" >
+            <View
+                android:layout_width="10dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bg_border_white"
+                android:backgroundTint="#F75332"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/birdie"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                />
+            <TextView
+                android:id="@+id/txtPercentBirdie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/viewMarginTwoIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/color_flag_yellow"
+            app:layout_constraintStart_toEndOf="@id/viewBirdieIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.015" />
+
+        <LinearLayout
+            android:id="@+id/viewParIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/viewMarginTwoIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.13" >
+            <View
+                android:layout_width="10dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bg_border_white"
+                android:backgroundTint="#B6B6B6"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/par_no_caps_lock"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                />
+            <TextView
+                android:id="@+id/txtPercentPar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/viewMarginThreeIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/color_flag_yellow"
+            app:layout_constraintStart_toEndOf="@id/viewParIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.015" />
+
+        <LinearLayout
+            android:id="@+id/viewBogeyIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/viewMarginThreeIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            app:layout_constraintWidth_percent="0.13" >
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bg_border_white"
+                android:backgroundTint="#3661A4"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bogey"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center"
+                android:textSize="8sp"
+                tools:ignore="SmallSp"
+                />
+            <TextView
+                android:id="@+id/txtPercentBogey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/viewMarginFourIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/color_flag_yellow"
+            app:layout_constraintStart_toEndOf="@id/viewBogeyIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.015" />
+
+        <LinearLayout
+            android:id="@+id/view2BogeyIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/viewMarginFourIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            app:layout_constraintWidth_percent="0.13" >
+            <View
+                android:layout_width="10dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bg_border_white"
+                android:backgroundTint="#767676"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/two_bogey"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center"
+                android:textSize="8sp"
+                tools:ignore="SmallSp" />
+            <TextView
+                android:id="@+id/txtPercent2Bogey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/viewMarginFiveIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/color_flag_yellow"
+            app:layout_constraintStart_toEndOf="@id/view2BogeyIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.015" />
+        <LinearLayout
+            android:id="@+id/viewOthersIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/viewMarginFiveIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            app:layout_constraintWidth_percent="0.13" >
+            <View
+                android:layout_width="10dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bg_border_white"
+                android:backgroundTint="@color/colorBlack"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/others"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center"
+                android:textSize="8sp"
+                tools:ignore="SmallSp" />
+            <TextView
+                android:id="@+id/txtPercentOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

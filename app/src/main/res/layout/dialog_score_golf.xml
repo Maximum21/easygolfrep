@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/bg_border_white"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="25dp">
+
+    <ImageView
+        android:id="@+id/btClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_icon_close_task"
+        android:layout_gravity="end"
+        android:contentDescription="@null"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_icon_user_default"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            >
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textAllCaps="true"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hole"
+                    android:textColor="@color/colorTextNormal"
+                    android:textAppearance="@style/AppTheme.WozFont"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtHole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textAppearance="@style/AppTheme.WozFont.Bold"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginStart="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/format_par"
+                    android:textColor="@color/colorTextNormal"
+                    android:textAppearance="@style/AppTheme.WozFont"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtPar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textAppearance="@style/AppTheme.WozFont.Bold"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginStart="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/format_ls"
+                    android:textColor="@color/colorTextNormal"
+                    android:textAppearance="@style/AppTheme.WozFont"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtSL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textAppearance="@style/AppTheme.WozFont.Bold"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginStart="5dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.minhhop.easygolf.presentation.golf.component.score.picker.EasyGolfPickerScoreView
+        android:id="@+id/wozScore"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDiver"
+        />
+
+    <com.minhhop.easygolf.widgets.WozFairwayGreen
+        android:id="@+id/wozFairway"
+        android:layout_marginTop="@dimen/d_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/fairway_hit"
+        app:type="fairway"
+        />
+
+    <com.minhhop.easygolf.widgets.WozFairwayGreen
+        android:id="@+id/wozGreen"
+        android:layout_marginTop="@dimen/d_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/green_in_regulation"
+        app:type="green"
+        />
+
+    <com.minhhop.easygolf.widgets.WozPutt
+        android:id="@+id/wozPutt"
+        android:layout_marginTop="@dimen/d_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btSubmit"
+        android:layout_marginTop="25dp"
+        android:layout_width="@dimen/button_submit_width"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/background_submit_selector"
+        android:text="@string/save"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="@style/AppTheme.WozFont"
+        android:enabled="true"
+        />
+
+</LinearLayout>

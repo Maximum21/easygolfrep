@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_item_schedule"
+    android:layout_marginStart="@dimen/d_15"
+    android:layout_marginEnd="@dimen/d_15"
+    android:layout_marginTop="@dimen/d_15"
+    android:layout_marginBottom="@dimen/d_10"
+   >
+    <ImageView
+        android:id="@+id/imgSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:transitionName="@string/transition_image"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/d_10"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FED631"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/actionDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            tools:ignore="RelativeOverlap,UseCompoundDrawables,UselessParent">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_icon_direction"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/direction"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_size_normal"
+                />
+
+        </LinearLayout>
+        <com.minhhop.easygolf.widgets.FriendsCalendarView
+            android:id="@+id/viewFriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

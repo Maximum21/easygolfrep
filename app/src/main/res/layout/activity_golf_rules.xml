@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color_rule_header"
+    android:layout_height="match_parent"
+    tools:context=".presentation.rules.GolfRulesActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.minhhop.easygolf.presentation.custom.EasyGolfHeaderNavigation
+            android:id="@+id/easyGolfHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:layout_marginTop="@dimen/d_10"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/d_15"
+                android:id="@+id/back_btn"
+                android:src="@drawable/ic_icon_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_marginStart="@dimen/d_15"
+                app:layout_constraintBottom_toBottomOf="@+id/back_btn"
+                app:layout_constraintStart_toEndOf="@+id/back_btn"
+                app:layout_constraintTop_toTopOf="@+id/back_btn"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:text="@string/golf_rules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputEditText
+                app:layout_constraintTop_toBottomOf="@+id/back_btn"
+                android:id="@+id/toolbarSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:drawableStartCompat="@drawable/baseline_search_black_24"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:layout_marginEnd="@dimen/normal_margin"
+                android:background="@drawable/background_border_white"
+                android:backgroundTint="@color/colorBgGray"
+                android:textSize="@dimen/normal_font_size"
+                android:drawablePadding="@dimen/small_margin"
+                android:hint="@string/search_rule"
+                android:paddingStart="@dimen/normal_margin"
+                android:paddingEnd="@dimen/normal_margin"
+                android:paddingTop="@dimen/little_margin"
+                android:paddingBottom="@dimen/little_margin"
+                android:inputType="text"
+                app:drawableTint="@color/colorPrimary"
+                />
+        </com.minhhop.easygolf.presentation.custom.EasyGolfHeaderNavigation>
+
+       <!-- <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@color/color_rule_header"
+            >-->
+
+            <ImageView
+                android:id="@+id/rules_header_iv"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/d_10"
+                app:layout_constraintTop_toBottomOf="@+id/easyGolfHeader"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_rolex_logo"
+                />
+
+            <TextView
+                android:layout_marginEnd="@dimen/d_10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/rules_header_iv"
+                app:layout_constraintTop_toTopOf="@+id/rules_header_iv"
+                app:layout_constraintStart_toEndOf="@+id/rules_header_iv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Player's Edition of rules of Golf"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorTitle"
+                android:layout_marginStart="10dp"
+                />
+
+        <androidx.recyclerview.widget.RecyclerView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/d_10"
+            app:layout_constraintTop_toBottomOf="@+id/rules_header_iv"
+            android:id="@+id/rules_act_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

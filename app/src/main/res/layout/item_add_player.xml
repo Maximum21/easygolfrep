@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUser"
+            android:layout_width="@dimen/d_40"
+            android:layout_height="@dimen/d_40"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_icon_user_default"
+            />
+
+        <ImageView
+            android:id="@+id/actionButtonRemoveUser"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_icon_remove_player"
+            android:contentDescription="@null"
+            android:tint="@color/colorRed"
+            android:layout_marginStart="@dimen/d_45"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_below="@id/layoutMain"
+        android:layout_marginTop="@dimen/d_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:gravity="center"
+        android:text="@string/coming_soon"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toBottomOf="@id/layoutMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <RelativeLayout
+        app:layout_constraintTop_toBottomOf="@id/txtName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/d_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/d_10"
+        >
+        <TextView
+            android:id="@+id/valueScore"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

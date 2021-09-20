@@ -1,0 +1,555 @@
+<resources>
+    <string name="google_maps_key" translatable="false">AIzaSyCDsFYWbofpXL-8s7f4pjIzYLd8yu9X3fc</string>
+    <string name="facebook_app_id" translatable="false">2087498431271456</string>
+
+    <string name="default_notification_channel_id" translatable="false">woz_channel</string>
+    <string name="login_fail">Email/Phone number or password is incorrect</string>
+    <string name="explanation">Need permission %s</string>
+    <string name="email_phone">Email or Phone</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+
+    <string name="forgot_password">Forgot Password</string>
+    <string name="register">Register</string>
+    <string name="login_with_social_account">Login as @SocialFB_Account</string>
+
+    <string name="term_policy">By clicking Register, you agree to our</string>
+    <string name="term_policy_action">Terms &amp; Privacy Policy</string>
+    <string name="term_policy_bottom">Product of</string>
+    <string name="term_policy_bottom_more" translatable="false">Minh United &amp; MHT</string>
+
+    <string name="information_register">Create your account. It\'s free and only takes a minute</string>
+    <string name="register_now">Register Now</string>
+    <string name="slogan" translatable="false">Play golf more easy</string>
+
+    <string name="delete_success">Delete success</string>
+    <string name="request_delete_tournament">Do you sure want to delete this tournament?</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="countryEntity">Country</string>
+    <string name="phone">Phone</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="information_term_policy_register">By creating an account, you agree to our</string>
+    <string name="information_term_policy_register_01" translatable="false">Terms &amp; Privacy Policy</string>
+
+    <string name="phone_vietnam" translatable="false">Vietnam (+84)</string>
+
+    <string name="validate_otp">Verification</string>
+    <string name="validate_otp_detail">Enter 4-digit code sent to you at</string>
+    <string name="submit">Submit</string>
+    <string name="verify">Verify Phone Number</string>
+    <string name="information_unregister" translatable="false">To create a account, enter a phone number that can be used to verify</string>
+    <string name="double_tap_to_back">Please click BACK again to exit</string>
+
+    <string name="tab_new">NEWS</string>
+    <string name="tab_video" translatable="false">VIDEOS</string>
+    <string name="tab_booking">BOOKING</string>
+    <string name="tab_calendar">SCHEDULE</string>
+    <string name="tab_feeds">FEEDS</string>
+    <string name="tab_handicap" translatable="false">HANDICAP</string>
+    <string name="tab_course">COURSES</string>
+    <string name="tab_group">GROUP</string>
+    <string name="tab_more">MORE</string>
+
+    <string name="type">TYPE:</string>
+    <string name="holes">HOLES:</string>
+    <string name="par" translatable="false">PAR:</string>
+    <string name="length">LENGTH:</string>
+    <string name="slope" translatable="false">SLOPE:</string>
+    <string name="fees" translatable="false">FEES:</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="courses">Courses</string>
+    <string name="plan" translatable="false">Plan</string>
+    <string name="rounds">Rounds</string>
+
+    <string name="play_new_round">PLAY NEW ROUND</string>
+    <string name="play_continue_round">CONTINUE ROUND</string>
+    <string name="add_plan">ADD PLAN</string>
+
+    <string name="loading_map">Loading</string>
+    <string name="loading">Loading…</string>
+
+    <string name="format_yard" translatable="false">%s y</string>
+    <string name="format_yard_full" translatable="false">%s yds</string>
+    <string name="format_meter" translatable="false">%s ms</string>
+    <string name="format_name_country" translatable="false">%s (+%s)</string>
+    <string name="format_result_name_country" translatable="false">%s (+%s)</string>
+
+    <string name="search_courses">Search Courses</string>
+    <string name="search_country">Search country</string>
+    <string name="search_rule">How to play golf?</string>
+    <string name="search_name">Type name</string>
+
+    <string name="finish_ground">Finish Round</string>
+    <string name="format_view_hole_current">HOLE %s</string>
+    <string name="distance">Distance</string>
+    <string name="distances">Distances</string>
+    <string name="green" translatable="false">Green</string>
+    <string name="tee" translatable="false">Tee</string>
+
+    <string name="format_par" translatable="false">Par</string>
+    <string name="format_ls" translatable="false">S.l </string>
+    <string name="format_view_par_current" translatable="false">Par %s</string>
+    <string name="format_view_hdc_current" translatable="false">Hdc %s</string>
+    <string name="format_view_yds_total" translatable="false">%s yds</string>
+
+    <string name="strokes" translatable="false">Strokes</string>
+    <string name="putts" translatable="false">Putts  </string>
+    <string name="fairway_hit" translatable="false">Fairway Hit  </string>
+    <string name="green_in_regulation" translatable="false">Green In Regulation  </string>
+    <string name="green_in_regulation_short" translatable="false">GIR</string>
+    <string name="score">Score  </string>
+    <string name="fh" translatable="false">FH  </string>
+    <string name="gir" translatable="false">GIR  </string>
+    <string name="add_score_card">Add Score</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Start transition-->
+    <string name="transition_image" translatable="false">easy_golf_image</string>
+    <string name="transition_name" translatable="false">easy_golf_name</string>
+
+    <!--End transition-->
+
+
+    <!--tab more-->
+    <string name="account_settings">Account Setting</string>
+    <string name="change_password">Change Password</string>
+    <string name="golf_rules">Golf Rules</string>
+    <string name="about_us">About Us</string>
+    <string name="terms_conditions">Terms AND Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="last_update_version">Last update version %s</string>
+
+
+    <string name="recent_post" translatable="false">Recent Post</string>
+    <string name="event">Event</string>
+    <string name="tutorial">Tutorial</string>
+
+
+    <string name="information_forget_password">Use this form to change your password. \n One change, your new password will be effected in next time you login</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+
+    <string name="key_test_fairy" translatable="false">cebae76bcf937eb4a851d2d235c3b85d966ffd25</string>
+
+    <string name="back_green">back</string>
+    <string name="center_green">center</string>
+    <string name="front_green">front</string>
+
+    <string name="close">Close</string>
+    <string name="logout">Logout</string>
+    <string name="please_confirm">Please Confirm</string>
+    <string name="more_logout">Are you sure want to logout ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+    <string name="view_score_card">View ScoreCard</string>
+    <string name="quit_game">Exit Game</string>
+
+    <string name="error_first_name">Enter first name</string>
+    <string name="error_last_name">Enter last name</string>
+    <string name="error_confirm_password">Confirm password not match</string>
+    <string name="error_email">Enter a valid email address</string>
+    <string name="error_phone">Enter a valid phone</string>
+    <string name="error_password">Enter at least 6 characters</string>
+    <string name="booking" translatable="false">Booking</string>
+    <string name="booking_now" translatable="false">Booking Now</string>
+    <string name="format_dialog_score" translatable="false">Hole %s Par %s S.I %s</string>
+
+    <string name="coming_soon" translatable="false">Coming Soon!</string>
+    <string name="no_data">No Data</string>
+    <string name="easy_golf_app" translatable="false">EasyGolf App</string>
+    <string name="updated">Updated</string>
+    <string name="size">Size</string>
+    <string name="current_version">Current Version</string>
+    <string name="developer">Developer</string>
+    <string name="visit_website">Visit Website</string>
+    <string name="email_feedback" translatable="false">easygolf@feedback.com</string>
+    <string name="requires_android" translatable="false">Requires Android</string>
+    <string name="content_requires_android" translatable="false">4.4W and Up</string>
+    <string name="min_name_version">%s and Up</string>
+    <string name="link_website">&lt;a href="https://easygolf.vn">Visit Website&lt;/a></string>
+
+    <string name="general" translatable="false">General</string>
+    <string name="full_name">Full name</string>
+    <string name="cell_phone">Cellphone</string>
+    <string name="phone_number">Phone number</string>
+    <string name="birthday">Birthday</string>
+    <string name="gender">Gender</string>
+    <string name="notification">Notifications</string>
+    <string name="phone_notification">Push Notification</string>
+    <string name="email_notification">Email Notification</string>
+
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+
+    <string name="feedback_title">Give Feedback</string>
+    <string name="feedback_content">We want to know what you thought of experience at EasyGolf so we\'d love to hear your feedback</string>
+    <string name="your_email">Your Email</string>
+    <string name="type_your_message">Type your message</string>
+    <string name="forgot_password_content">Enter you phone number below and we\'ll send you with instruction on how to change your password</string>
+
+    <string name="zero" translatable="false">0</string>
+    <string name="one_hundred" translatable="false">100</string>
+    <string name="others">Others</string>
+    <string name="albatross" translatable="false">Albatross</string>
+    <string name="eagle" translatable="false">Eagle</string>
+    <string name="birdie" translatable="false">Birdie</string>
+    <string name="bogey" translatable="false">Bogey</string>
+    <string name="two_bogey" translatable="false">2Bogey</string>
+    <string name="total_score">Total Score</string>
+    <string name="format_rating" translatable="false">%s/10</string>
+
+    <string name="options">Options</string>
+    <string name="camera" translatable="false">Camera</string>
+    <string name="gallery">Gallery</string>
+
+    <string name="format_distance_nearby">%skm nearby</string>
+
+    <string name="starting_tee" translatable="false">Starting Tee:</string>
+    <string name="starting_tee_clear" translatable="false">Starting Tee</string>
+    <string name="default_unit">Default Unit:</string>
+    <string name="handicap_index" translatable="false">Handicap Index:</string>
+    <string name="format_handicap" translatable="false">S.I </string>
+    <string name="playing_hcp" translatable="false">Playing HCP:</string>
+    <string name="hole">Hole</string>
+    <string name="send">Send</string>
+    <string name="yard" translatable="false">Yard</string>
+    <string name="yards" translatable="false">yards</string>
+    <string name="meters" translatable="false">meters</string>
+    <string name="meter" translatable="false">Meter</string>
+    <string name="format_starting_tee_yard" translatable="false">%s > %sy</string>
+    <string name="format_starting_tee_meter" translatable="false">%s > %sm</string>
+
+
+    <!--Menu question for feedback-->
+
+    <string name="general_question">General question</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="report_course">Report course</string>
+    <string name="incorrect_hole_details" translatable="false">Incorrect hole details</string>
+    <string name="incorrect_course_details" translatable="false">Incorrect course details</string>
+
+    <string name="resend_code">Resend code (%s)</string>
+    <string name="resend_code_clear">Resend code</string>
+
+
+    <array name="unit_spinner">
+        <item>Yard</item>
+        <item>Meter</item>
+    </array>
+
+
+    <string name="title_access_location">Location services</string>
+    <string name="content_access_location">In order to find nearly courses and use GPS+, you must enable location services.</string>
+    <string name="enable">Enable</string>
+    <string name="not_now">Not now</string>
+
+    <string name="tab_nearby">Nearby</string>
+    <string name="tab_book" translatable="false">Book</string>
+    <string name="tab_search">Search</string>
+
+    <string name="hint_input_region" translatable="false">City, Region, State, Zip or Course</string>
+    <string name="hint_input_date">Select Date</string>
+    <string name="find_tee_times" translatable="false">Find Tee Times</string>
+    <string name="title_search_rule" translatable="false">Looking for a golf course research</string>
+
+    <string name="time_available">Time available:</string>
+    <string name="error_time_available_booking" translatable="false">It\'s Time to Tee up another search!\n Update area, change dates and get ready to play.</string>
+
+    <!--for menu play golf-->
+    <string name="classic_scoring" translatable="false">Scoring</string>
+    <string name="friend_scoring">Friend Scoring</string>
+    <string name="add_player">Add player</string>
+    <string name="player_scorecard">Player %s</string>
+    <string name="view_green" translatable="false">Yardage book</string>
+    <string name="note">Note</string>
+    <string name="report_hole">Report this hole</string>
+    <string name="share">Share</string>
+    <string name="end_game">End Game</string>
+    <string name="change_to_meter">Change to meter</string>
+    <string name="change_to_yard">Change to yard</string>
+    <string name="change_default_tee">Change default tee</string>
+    <string name="dash" translatable="false">-</string>
+
+    <string name="send_feedback">Send Feedback</string>
+    <string name="done">Done</string>
+    <string name="done_format">Done(%s)</string>
+    <string name="score_card">Scorecards</string>
+    <string name="unknown_name">Unknown name</string>
+    <string name="to_phone">Call</string>
+    <string name="direction">Direction</string>
+    <string name="information">Information</string>
+    <string name="par_clear" translatable="false">PAR</string>
+    <string name="cr" translatable="false">cr</string>
+    <string name="sr" translatable="false">sr</string>
+    <string name="contact">Contact</string>
+    <string name="chat" translatable="false">Chat</string>
+    <string name="group">Group</string>
+    <string name="near_friend" translatable="false">Nearby Friends On EasyGolf</string>
+    <string name="list_friend">List Friends</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="start_chat">Start Chat</string>
+    <string name="create_group_title">Welcome to Chat Group</string>
+    <string name="create_group_info">Create groups with your family \n and your friends</string>
+    <string name="error_golf">Opps! We can not find the data for this course. Our team works hard on building our golf course database in new countryEntities. Please send us the request, we will work on it ASAP.</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="members_chat">Members: %s</string>
+    <string name="add_participants">Add Members</string>
+    <string name="notifications">Notifications</string>
+    <string name="leave_group">Leave Group</string>
+    <string name="delete_conversation">Hide conversation</string>
+    <string name="people_group" translatable="false">+ %s</string>
+    <string name="edit_group_name">Edit Group Name</string>
+    <string name="create_group_name">Create Group Name</string>
+    <string name="confirm_leave_group">Are you sure you want to leave this group?</string>
+    <string name="got_it">Got it</string>
+
+    <string name="schedule">Schedule</string>
+    <string name="tournament">Tournament</string>
+    <string name="history">History</string>
+    <string name="calendar">Calendar</string>
+    <string name="back">Back</string>
+
+    <string name="select_course">Select A Course</string>
+
+    <string name="lorem" translatable="false">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula sem a malesuada rhoncus.
+    </string>
+
+    <string name="easygolf_handicap" translatable="false">
+        EasyGolf Handicap
+    </string>
+    <string name="handicap_eligible" translatable="false">
+        This round is not eligible for handicap calculation since the Course Par, Course Rating, or SLOPE do not comply with the calculation rules
+    </string>
+    <!--Start for end game-->
+    <string name="friends">Friends</string>
+    <string name="following">Following</string>
+    <string name="handicap" translatable="false">Handicap</string>
+    <string name="my_par" translatable="false">My Par</string>
+    <string name="na" translatable="false">N/A</string>
+    <string name="resume_game">Resume game</string>
+    <string name="group_score">Group Score</string>
+    <string name="my_score">My Score</string>
+    <string name="scoring" translatable="false">Scoring</string>
+    <string name="left" translatable="false">Left</string>
+    <string name="fairway" translatable="false">Fairway</string>
+    <string name="right">Right</string>
+    <string name="percent" translatable="false">%s%%</string>
+    <string name="par_no_caps_lock" translatable="false">Par</string>
+    <string name="save_game">Save Game</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="statistic">Statistic</string>
+    <string name="used_for_handicap_calculation">Used for handicap calculation</string>
+    <string name="handicap_round" translatable="false">Handicap Round</string>
+    <string name="not_found_round">Not found round</string>
+    <!--End for end game-->
+
+    <!--Start invite to battle dialog-->
+    <string name="title_host_end_game">FINISHED ROUND</string>
+    <string name="content_finish_round">The round has been finished by owner.</string>
+    <string name="title_invite">INVITATION</string>
+    <string name="content_invite">You have been invited playing a round at the current club. Do you want to participate?</string>
+    <string name="title_confirm_data">PLEASE CONFIRM</string>
+    <string name="content_confirm_data">Do you want to upload all current scores? If not, it will be deleted.</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="upload">Upload</string>
+    <string name="view_summary">Round Summary</string>
+    <!--End invite to battle dialog-->
+
+    <string name="hint_input_chat">Aa</string>
+    <string name="starting_conversation_chat">Chat with your friends and share photo files</string>
+    <string name="view_you_sent_photo">You sent a photo</string>
+    <string name="create_chat">Create chat</string>
+    <string name="view_group_sent_photo">Group sent a photo</string>
+    <string name="view_single_sent_photo">%s sent a photo</string>
+    <string name="view_change_name_group">changed to %s</string>
+    <string name="member_add_to_group">%s added the group</string>
+    <string name="member_leave_to_group">%s left the group</string>
+
+    <string name="someone_added_to_group">someone added the group</string>
+    <string name="someone_leave_to_group">someone left the group</string>
+    <string name="delete_conversation_content">This conversation will remain hidden until a new message arrives.</string>
+    <string name="left_group_content">Are you sure want to leave this conversation ?</string>
+
+    <!--New score card-->
+    <string name="default_tee_box" translatable="false">Default tee box</string>
+    <string name="number_of_hole">Number of holes</string>
+    <string name="player">Players</string>
+    <string name="fairways" translatable="false">Fairways</string>
+    <string name="overage_putts" translatable="false">Overage Putts</string>
+    <string name="greens" translatable="false">Greens</string>
+    <string name="number_selected" translatable="false">(%s)</string>
+    <string name="text_score_row_header" translatable="false">Score</string>
+    <string name="text_over_row_header" translatable="false">/ Over</string>
+
+    <string name="round_hdc" translatable="false">Round HDC</string>
+    <string name="scores">Scores</string>
+    <string name="over_hdc" translatable="false">Over HDC</string>
+    <string name="value_more" translatable="false">+%s</string>
+    <string name="detail">Detail</string>
+    <string name="list_member">List Member</string>
+
+    <string name="event_name">Event name</string>
+    <string name="location">Location</string>
+    <string name="date_and_time">Date &amp; time</string>
+    <string name="add_friends">Add friends</string>
+    <string name="add_event">Add Event</string>
+    <string name="hint_name_event">Enter name</string>
+    <string name="error_event_name">Enter event name</string>
+    <string name="error_event_location" translatable="false">Enter event location</string>
+    <string name="error_event_date" translatable="false">Enter event date</string>
+    <string name="error_event_time">Enter event time</string>
+
+    <string name="club_is_playing_tournament" translatable="false">You are playing this club</string>
+    <string name="edit_tournament_name" translatable="false">Edit Tournament Name</string>
+    <string name="txt_not_found_image">Not found image</string>
+
+    <!--for contact-->
+    <string name="title_access_contact">Unable to Access Contacts</string>
+    <string name="content_access_contact">We need access to your contacts. \n Enable access under privacy settings.</string>
+    <string name="button_access_contact">Open Contact Settings</string>
+
+    <string name="format_name_score_card" translatable="false">%s (%s)</string>
+    <string name="confirm_content_delete_game">Are you sure you want to delete this round?</string>
+    <string name="confirm_title_delete_game">Delete Game</string>
+    <string name="miss">Miss</string>
+    <string name="hit">Hit</string>
+    <string name="search_contact">Search Contact</string>
+    <string name="search_contact_hint">Type name or phone number</string>
+    <string name="user_cannot_join_the_battle">%s can not join your round at this time.</string>
+
+    <string name="create">Create</string>
+    <string name="type_here">type here</string>
+
+    <string name="content_remove_player_from_round">Are you sure want to remove %s from this round?</string>
+
+    <string name="title_no_network" translatable="false">OOPS!</string>
+    <string name="content_no_network" translatable="false">No internet connection found, check your connection or try again.</string>
+    <string name="try_again" translatable="false">TRY AGAIN</string>
+    <string name="sync_contact_description">Update contacts to easily find and message your friends. Easygolf guarantees that your data us always secured at all time.</string>
+    <string name="a_product_of" translatable="false">A product of</string>
+    <string name="course_nearby" translatable="false">Courses Nearby</string>
+    <string name="recommend" translatable="false">Courses You May Be Interested In</string>
+
+    <string name="overview" translatable="false">Overview</string>
+    <string name="photos" translatable="false">Photos</string>
+    <string name="reviews" translatable="false">Reviews</string>
+    <string name="description_dot" translatable="false">Description:</string>
+    <string name="start_a_round" translatable="false">Start a round</string>
+    <string name="enter_scorecard" translatable="false">Enter scorecard</string>
+    <string name="round_setting" translatable="false">Round Setting</string>
+    <string name="course_photo" translatable="false">Course photo</string>
+    <string name="yard_shortcut" translatable="false">y</string>
+    <string name="meter_shortcut" translatable="false">m</string>
+    <string name="post_description" translatable="false">What\'s your favorite course you\'ve played in the last year?</string>
+    <string name="like" translatable="false">Like</string>
+    <string name="what_s_on_your_mind" translatable="false">What\'s on your mind?</string>
+    <string name="create_post" translatable="false">Create Post</string>
+    <string name="post" translatable="false">POST</string>
+    <string name="photo_video" translatable="false">Photo</string>
+    <string name="tag_friends" translatable="false">Tag Friends</string>
+    <string name="tag_a_course" translatable="false">Tag a Course</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="shape" translatable="false">#</string>
+    <string name="tee_format_distance_default" translatable="false">%s %s yds (default)</string>
+    <string name="tee_format_distance" translatable="false">%s %s yds</string>
+    <string name="select_tee" translatable="false">Select A Tee</string>
+
+    <string name="round_history" translatable="false">Round History</string>
+    <string name="request_course" translatable="false">Request Course</string>
+    <string name="dark_mode" translatable="false">Dark Mode</string>
+    <string name="add_a_comment" translatable="false">Add a comment</string>
+    <string name="select_friends" translatable="false">Select Friends</string>
+    <string name="search" translatable="false">Search</string>
+    <string name="explore_course" translatable="false">Explore Course</string>
+    <string name="handicap_format_view" translatable="false">Handicap %s</string>
+    <string name="find_friends" translatable="false">Find friends</string>
+    <string name="find_courses" translatable="false">Find courses</string>
+    <string name="limit_add_player" translatable="false">Maximum only choose %d players</string>
+    <string name="name" translatable="false">name</string>
+    <string name="reply" translatable="false">Reply</string>
+    <string name="share_to" translatable="false">Share to</string>
+    <string name="post_detail" translatable="false">Post detail</string>
+    <string name="comment" translatable="false">Comment</string>
+    <string name="your_rating" translatable="false">Your rating!</string>
+    <string name="add_your_review" translatable="false">Add your review</string>
+    <string name="your_review_description" translatable="false">We would love to hear more about your experience!</string>
+    <string name="counter_review_format" translatable="false">All review (%d)</string>
+    <string name="add_review_description" translatable="false">Show some love, Rate 5 Stars</string>
+    <string name="content_review_hint" translatable="false">Help us improve, enter your feedback here!</string>
+    <string name="format_distance" translatable="false">%skm</string>
+    <string name="comments" translatable="false">Comments</string>
+    <string name="liked_by" translatable="false">Liked by:</string>
+    <string name="unknown_error" translatable="false">Unknown error</string>
+    <string name="handicap_not_available_warning" translatable="false">Handicap: Not Eligible</string>
+    <string name="follow" translatable="false">Follow</string>
+    <string name="pending" translatable="false">Pending</string>
+    <string name="decline" translatable="false">Decline</string>
+    <string name="additional_message" translatable="false">Adding a message is optional. Click \"Send Request\" to proceed, or \"Cancel\" to go back.</string>
+    <string name="_140_characters_maximum" translatable="false">140 characters maximum</string>
+    <string name="want_to_add_a_message" translatable="false">, want to add a message</string>
+    <string name="send_request" translatable="false">send request</string>
+    <string name="limit_get_gallery" translatable="false">Maximum only choose %d photos</string>
+    <string name="max" translatable="false">Max</string>
+    <string name="missing_message" translatable="false">Please enter message</string>
+
+    <string name="missing_filed" translatable="false">Missing filed</string>
+    <string name="upload_scorecard" translatable="false">Upload Scorecard</string>
+    <string name="enter_pass_score" translatable="false">Enter Pass Score</string>
+    <string name="quick_input" translatable="false">Quick Input</string>
+    <string name="gross_score" translatable="false">Gross Score</string>
+    <string name="adjusted_score" translatable="false">Adjusted Score</string>
+    <string name="join_round" translatable="false">Join Round</string>
+    <string name="no_posts_to_show" translatable="false">No posts to show</string>
+    <string name="no_round_history_to_show" translatable="false">No round history to show</string>
+    <string name="no_data_to_show" translatable="false">No data to show</string>
+    <string name="followers" translatable="false">Followers</string>
+    <string name="delete_game" translatable="false">Delete Game</string>
+    <string name="rating_or_sl" translatable="false">Rating/S.L:</string>
+    <string name="hdc" translatable="false">HDC</string>
+    <string name="thru" translatable="false">Thru</string>
+    <string name="out" translatable="false">OUT</string>
+    <string name="_in" translatable="false">IN</string>
+    <string name="format_rating_or_sl" translatable="false">%s/%s</string>
+    <string name="not_available_over" translatable="false">E</string>
+    <string name="format_name_course" translatable="false">%s (%s)</string>
+    <string name="scorecard_uploaded" translatable="false">Your scorecard has been uploaded.</string>
+    <string name="pass_score_submitted" translatable="false">Your round has been submitted.</string>
+    <string name="member_remove_from_battle" translatable="false">%s was removed this round</string>
+    <string name="don_not_have_an_account" translatable="false">Don\'t have an account?</string>
+    <string name="sign_up" translatable="false">Sign Up</string>
+    <string name="missing_username" translatable="false">Please input email or phone</string>
+    <string name="missing_password" translatable="false">Please input password</string>
+    <string name="send_otp" translatable="false">Send OTP</string>
+    <string name="otp_verification" translatable="false">OTP Verification</string>
+    <string name="country" translatable="false">Country</string>
+    <string name="feed_post" translatable="false">Feed Post</string>
+    <string name="news_feed" translatable="false">News Feed </string>
+    <string name="view_all" translatable="false">View all</string>
+    <string name="title_alert_finish_round" translatable="false">Hi %s, you have 1 unfinished round!</string>
+    <string name="description_alert_finish_round" translatable="false">Please complete the round at %s Course.</string>
+    <string name="tee_name" translatable="false">Tee %s</string>
+    <string name="tot" translatable="false">TOT</string>
+    <string name="stroke_index" translatable="false">S.I</string>
+    <string name="approve" translatable="false">Approve</string>
+    <string name="update_account" translatable="false">Update Account</string>
+    <string name="enter_course_name" translatable="false">Enter Course Name</string>
+    <string name="enter_course_name_error" translatable="false">Please enter course name!</string>
+    <string name="enter_course_location_error" translatable="false">Please select course location!</string>
+    <string name="selected_location" translatable="false">Selected Location</string>
+    <string name="course_added" translatable="false">Requested Course is Added!</string>
+    <string name="hostory_uploaded_success" translatable="false">History Uploaded Successfully!</string>
+    <string name="upload_history" translatable="false">Upload History</string>
+    <string name="recent_chat" translatable="false">Recent Chat</string>
+</resources>

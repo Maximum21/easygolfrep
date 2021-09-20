@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/imgIconTee"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:tint="@color/colorBlack"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_icon_option_tee"
+        />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        android:layout_marginStart="5dp"
+        />
+</LinearLayout>

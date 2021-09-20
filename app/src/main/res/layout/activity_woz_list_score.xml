@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_mask_course_detail"
+    android:backgroundTint="#E6000000"
+    >
+
+    <ImageView
+        android:id="@+id/btClose"
+        android:layout_marginTop="@dimen/d_15"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_close"
+        android:layout_marginEnd="@dimen/d_15"
+        android:contentDescription="@null"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listScore"
+        android:layout_below="@id/btClose"
+        android:layout_marginTop="@dimen/d_15"
+        android:layout_marginBottom="@dimen/d_15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

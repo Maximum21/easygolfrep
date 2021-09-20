@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background_mask_course_detail"
+    android:padding="@dimen/normal_margin"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_sms"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_review_description"
+        android:gravity="center"
+        android:textColor="@color/textColorGray"
+        style="@style/bold"
+        android:textSize="@dimen/title_font_size"
+        />
+    <com.minhhop.easygolf.presentation.club.detail.review.RatingView
+        android:id="@+id/viewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_gravity="center"
+        app:format="icon"
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#0F000000"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editContent"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:minHeight="100dp"
+            android:hint="@string/content_review_hint"
+            android:gravity="start"
+            android:textSize="@dimen/normal_font_size"
+            android:textColor="@color/textColorDark"
+            android:background="@android:color/transparent"
+            android:layout_margin="@dimen/normal_margin"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/normal_margin"
+        >
+        <com.minhhop.easygolf.presentation.custom.EasyGolfButton
+            android:id="@+id/btSubmit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/small_margin"
+            app:textButton="@string/submit"
+            />
+
+        <com.minhhop.easygolf.presentation.custom.EasyGolfButton
+            android:id="@+id/btClose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/small_margin"
+            app:isThemePrimary="false"
+            app:textButton="@string/close"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

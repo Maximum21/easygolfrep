@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundMain"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorBackgroundMain"
+        >
+        <com.minhhop.easygolf.presentation.custom.EasyGolfToolbar
+            android:id="@+id/toolbarBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isLight="false">
+
+            <ImageView
+                android:id="@+id/buttonRotation"
+                style="@style/normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="@dimen/normal_margin"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_icon_rotation" />
+        </com.minhhop.easygolf.presentation.custom.EasyGolfToolbar>
+
+        <FrameLayout
+            android:id="@+id/containerScorecard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin" />
+
+    </LinearLayout>
+    <include layout="@layout/layout_mask"/>
+</RelativeLayout>

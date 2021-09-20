@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_marginTop="@dimen/d_10"
+    android:layout_marginBottom="@dimen/margin_bottom_item_chat"
+    android:layout_marginStart="@dimen/d_15"
+    android:layout_marginEnd="@dimen/d_15"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@null"
+        android:adjustViewBounds="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_icon_user_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.eyalbira.loadingdots.LoadingDots
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:LoadingDots_auto_play="true"
+        app:LoadingDots_dots_color="@color/color_read_message"
+        app:LoadingDots_dots_count="4"
+        app:LoadingDots_dots_size="5dp"
+        app:LoadingDots_dots_space="3dp"
+        app:LoadingDots_loop_duration="800"
+        app:LoadingDots_loop_start_delay="0"
+        app:LoadingDots_jump_height="4dp"
+        app:layout_constraintStart_toEndOf="@id/imgAvatar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/bg_messenger_typing_receive"
+        android:paddingTop="@dimen/d_10"
+        android:paddingBottom="@dimen/d_15"
+        android:paddingStart="@dimen/d_15"
+        android:paddingEnd="@dimen/d_15"
+        android:layout_marginStart="@dimen/d_10"
+        android:gravity="center"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

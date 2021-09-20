@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.minhhop.easygolf.presentation.golf.play.EasyGolfMapFragment"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/background_toolbar_play_golf"
+        />
+
+    <com.minhhop.easygolf.presentation.custom.DistanceGolfView
+        android:id="@+id/viewDistanceStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        />
+
+    <com.minhhop.easygolf.presentation.custom.DistanceGolfView
+        android:id="@+id/viewDistanceEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="-10dp"
+            android:layout_below="@id/layoutToolBar"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/format_par"
+                android:textColor="@color/colorWhite"
+                />
+            <TextView
+                android:id="@+id/txtPar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_marginStart="4dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/format_handicap"
+                android:textColor="@color/colorWhite"
+                android:layout_marginStart="10dp"
+                />
+            <TextView
+                android:id="@+id/txtIndex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginStart="3dp"
+                android:textColor="@color/colorWhite"
+                />
+
+            <TextView
+                android:id="@+id/txtCurrentDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/format_yard_full"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_marginStart="10dp"
+                />
+        </LinearLayout>
+
+
+        <com.minhhop.easygolf.widgets.WozViewDistance
+            android:id="@+id/holderDistanceGreen"
+            android:visibility="invisible"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/layoutToolBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <FrameLayout
+            android:id="@+id/btViewGreen"
+            android:layout_width="@dimen/d_40"
+            android:layout_height="@dimen/d_40"
+            android:layout_marginTop="@dimen/d_15"
+            android:layout_below="@id/holderDistanceGreen"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            >
+            <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_view_green"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+
+            <ImageView
+                android:id="@+id/iconViewGreen"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_icon_view_green"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:layout_gravity="center"
+                />
+
+        </FrameLayout>
+
+
+        <View
+            android:id="@+id/layoutToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp"
+            android:layout_marginBottom="30dp"
+            tools:ignore="UselessParent">
+            <RelativeLayout
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/iconChat"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/background_chat"
+                    android:visibility="gone"
+                    >
+                    <ImageView
+                        android:id="@+id/dropTrackShotIcon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@null"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+
+                <com.minhhop.easygolf.widgets.WozGolfButton
+                    android:id="@+id/wozGolfButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    tools:ignore="RelativeOverlap" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+
+                >
+
+                <ImageView
+                    android:id="@+id/btBackHole"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back_v1"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:layout_gravity="start"
+                    />
+
+                <ImageView
+                    android:id="@+id/btNextHole"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_icon_next_v1"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_mask"
+        android:visibility="gone"
+        />
+
+    <com.minhhop.easygolf.widgets.course.ChangTeeView
+        android:id="@+id/viewChangeListTee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@color/color_mask"
+        />
+
+    <LinearLayout
+        android:id="@+id/viewListHole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:visibility="gone"
+        >
+        <com.minhhop.easygolf.widgets.ViewTriangle
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listHole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/background_border_white"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBarBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:popupTheme="@style/ThemeOverlay.YourPopup"
+            android:theme="@style/ToolbarThemeWhite"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            />
+        <LinearLayout
+            android:id="@+id/optionHole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:ignore="UseCompoundDrawables">
+            <TextView
+                android:id="@+id/txtCurrentHole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:textAppearance="@style/AppTheme.WozFont.Bold"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:tint="@color/colorWhite"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24px"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/actionMenuMore"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="18dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_icon_more"
+            android:contentDescription="@null"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/d_15"
+            />
+    </RelativeLayout>
+
+    <com.minhhop.easygolf.presentation.golf.component.menu.MenuMoreView
+        android:id="@+id/menuMore"
+        android:layout_marginTop="38dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        />
+
+    <include layout="@layout/layout_loading_map"
+        android:visibility="gone"
+        />
+    <!-- include bottom sheet -->
+    <include layout="@layout/bottom_sheet_golf"
+        />
+    <RelativeLayout
+        android:id="@+id/layoutLoadingLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <com.minhhop.easygolf.widgets.ViewGreenLayout
+        android:id="@+id/viewPhotoGreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "195070710913",
+    "firebase_url": "https://easygolf-prod.firebaseio.com",
+    "project_id": "easygolf-prod",
+    "storage_bucket": "easygolf-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195070710913:android:3cd9aeb65ba01802dfe980",
+        "android_client_info": {
+          "package_name": "com.minhhop.easygolf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195070710913-5b99i4tj8ftpr0kp7bt6vg6v46a1k93a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6RMf5FyvHBR2ZrONxgDQR7rDWU17zUlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195070710913-5b99i4tj8ftpr0kp7bt6vg6v46a1k93a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "195070710913-p42p553r5pjr2hfo9luldvb8vfren4ki.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.minhhop.easygolf"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

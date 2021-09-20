@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/size_item_club_default"
+    android:layout_height="@dimen/size_item_club_default"
+    android:layout_marginTop="@dimen/normal_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardViewPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_gravity="center"
+            app:cardElevation="0dp">
+            <ImageView
+                android:id="@+id/imgClubPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBgGray"
+                android:src="@drawable/ic_icon_camera_plus"
+                android:contentDescription="@null"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:padding="@dimen/large_padding"
+                />
+        </com.google.android.material.card.MaterialCardView>
+    </FrameLayout>
+</FrameLayout>

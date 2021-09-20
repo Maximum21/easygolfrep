@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundMain"
+    >
+
+    <com.minhhop.easygolf.presentation.custom.EasyGolfToolbar
+        android:id="@+id/toolbarBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/back"
+        app:isLight="false"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="25dp"
+        android:layout_margin="20dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_pin_code"
+            android:contentDescription="@null"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/validate_otp"
+            android:textColor="@color/colorPrimary"
+            style="@style/bold"
+            android:textSize="@dimen/title_font_size"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/d_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mTxtOtpDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/validate_otp_detail"
+                android:textColor="@color/textColorGray"
+                android:textSize="@dimen/normal_font_size"
+                android:textAlignment="center"
+                style="@style/normal"
+                />
+
+            <TextView
+                android:id="@+id/mTxtOtpNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_5"
+                android:textColor="@color/colorLinker"
+                android:textAppearance="@style/AppTheme.WozFont"
+                android:textSize="@dimen/normal_font_size"
+                android:textAlignment="center"
+                style="@style/normal"
+                />
+
+        </LinearLayout>
+
+        <com.minhhop.easygolf.presentation.verify_code.VerificationCodeView
+            android:id="@+id/verifyCodeView"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="true"
+            app:codeViewCount="4"
+            app:openKeyBoard="true"
+            />
+        <com.minhhop.easygolf.presentation.custom.EasyGolfButton
+            android:id="@+id/btSubmit"
+            android:layout_marginTop="@dimen/large_margin"
+            android:layout_width="@dimen/button_submit_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_submit_selector"
+            app:textButton="@string/confirm"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textAppearance="@style/AppTheme.WozFont"
+            android:enabled="true"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/btResendCode"
+            android:layout_marginTop="@dimen/large_margin"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resend_code"
+            style="@style/normal"
+            app:drawableStartCompat="@drawable/ic_icon_resend"
+            android:drawablePadding="5dp"
+            android:textColor="@color/colorLinker"
+            />
+    </LinearLayout>
+    <include layout="@layout/layout_loading_white"/>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/viewDiver"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDiver"
+        />
+
+    <ImageView
+        android:id="@+id/imgCourse"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_country"
+        android:textSize="16sp"
+        android:textColor="@color/colorLinker"
+        android:textAppearance="@style/AppTheme.WozFont"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="24dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_icon_place"
+                />
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+
+                />
+        </LinearLayout>
+        <Button
+            android:layout_gravity="end"
+            android:id="@+id/btBook"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/tab_book"
+            android:background="@drawable/background_button_sign_in"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="10dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

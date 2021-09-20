@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackgroundMainGray"
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorBackgroundMain"
+            >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textNameCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorHover"
+                android:text="@string/your_rating"
+                android:gravity="start|center"
+                android:textSize="@dimen/normal_font_size"
+                style="@style/bold"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:layout_marginEnd="@dimen/normal_margin"
+                android:layout_marginTop="@dimen/normal_margin"
+                />
+
+            <com.minhhop.easygolf.presentation.club.detail.review.RatingView
+                android:id="@+id/viewRating"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:layout_marginEnd="@dimen/normal_margin"
+                android:layout_width="match_parent"
+                app:format="text"
+                android:layout_height="wrap_content"
+
+                />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorGray"
+                android:text="@string/your_review_description"
+                android:gravity="start|center"
+                android:drawablePadding="@dimen/normal_margin"
+                android:textSize="@dimen/small_font_size"
+                style="@style/normal"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:layout_marginEnd="@dimen/normal_margin"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/background_mask_course_detail"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/normal_margin"
+                    android:paddingBottom="@dimen/normal_margin"
+                    >
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textTotalReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/counter_review_format"
+                        android:textColor="@color/textColorHover"
+                        android:textSize="@dimen/x_normal_font_size"
+                        style="@style/bold"
+                        android:layout_marginStart="@dimen/normal_margin"
+                        android:layout_marginEnd="@dimen/normal_margin"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/listReview"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

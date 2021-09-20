@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/d_20"
+    android:orientation="vertical"
+    android:backgroundTint="@color/colorBackgroundMain"
+    android:background="@drawable/background_mask_course_detail">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_default_tee"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:textSize="@dimen/title_font_size"
+        android:gravity="center"
+        android:layout_gravity="center"
+        style="@style/normal"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listTee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_margin"
+        />
+
+    <com.minhhop.easygolf.presentation.custom.EasyGolfButton
+        android:id="@+id/btSave"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_width="wrap_content"
+        android:minWidth="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:textButton="@string/save"
+        />
+</LinearLayout>

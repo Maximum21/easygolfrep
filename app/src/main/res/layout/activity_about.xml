@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBarBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ToolbarThemeWhite"
+            >
+            <ImageView
+                android:layout_width="@dimen/size_logo_small"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/bg_about_us"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:contentDescription="@null"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_marginStart="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/easy_golf_app"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:textAppearance="@style/AppTheme.WozFont.Bold"
+                    />
+
+                
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/updated"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:textAppearance="@style/AppTheme.WozFont.Bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtLastUpdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorTextDark"
+                            android:textSize="13sp"
+                            android:textAppearance="@style/AppTheme.WozFont"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/size"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:textAppearance="@style/AppTheme.WozFont.Bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtSize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorTextDark"
+                            android:textSize="13sp"
+                            android:textAppearance="@style/AppTheme.WozFont"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/current_version"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:textAppearance="@style/AppTheme.WozFont.Bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtCurrentVersion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorTextDark"
+                            android:textSize="13sp"
+                            android:textAppearance="@style/AppTheme.WozFont"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/requires_android"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14sp"
+                            android:textAppearance="@style/AppTheme.WozFont.Bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtRequiresAndroid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorTextDark"
+                            android:text="@string/content_requires_android"
+                            android:textSize="13sp"
+                            android:textAppearance="@style/AppTheme.WozFont"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/developer"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textAppearance="@style/AppTheme.WozFont.Bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtLinkWeb"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:linksClickable="true"
+                    android:layout_height="wrap_content"
+                    android:text="@string/visit_website"
+                    android:textColor="@color/colorLinker"
+                    android:textColorLink="@color/colorLinker"
+                    android:textSize="14sp"
+                    android:textAppearance="@style/AppTheme.WozFont.Bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtSendFeedBack"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_feedback"
+                    android:textColor="@color/colorLinker"
+                    android:textColorLink="@color/colorLinker"
+                    android:textSize="14sp"
+                    android:textAppearance="@style/AppTheme.WozFont.Bold"
+                    />
+                <TextView
+                    android:id="@+id/privacyPolicy"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacy_policy"
+                    android:textColor="@color/colorLinker"
+                    android:textSize="14sp"
+                    android:textAppearance="@style/AppTheme.WozFont.Bold"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

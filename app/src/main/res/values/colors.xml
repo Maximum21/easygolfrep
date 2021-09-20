@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#54AF47</color>
+    <color name="colorPrimaryDark">#257B11</color>
+    <color name="colorAccent">#257B11</color>
+    <color name="colorFlash">#69ae1f</color>
+    <color name="colorButtonSignIn">#4c8e06</color>
+    <color name="colorButtonSignInEnable">#83347e18</color>
+    <color name="colorBgSettingAccount">#4E8D1A</color>
+    <color name="colorBgHint">#c0cccccc</color>
+    <color name="colorHintInputLogin">#a0a0a0</color>
+    <color name="colorDark">#274e2b</color>
+    <color name="colorLogo">#6aad4a</color>
+
+    <color name="color_link">#4d92dd</color>
+    <color name="colorTitle">#1976ae</color>
+    <color name="colorTitleas">#48ffffff</color>
+    <color name="colorMinhHop">#387fbb</color>
+    <color name="colorLinker">#1379D8</color>
+    <color name="nav_state_enable">#4d92dd</color>
+    <color name="nav_state_not_enable">#8daac9</color>
+    <color name="colorTexHint">#a0a0a0</color>
+    <color name="colorIconToolbarBack">#585858</color>
+
+    <color name="colorBgGray">#efefef</color>
+    <color name="colorHint">#b7b7b7</color>
+    <color name="colorDiver">#DDDDDD</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorTextDark">#515151</color>
+    <color name="colorTextNormal">#636363</color>
+    <color name="colorDarkText">#7b7b7b</color>
+
+    <color name="color_terms_privacy">#9bd2d4</color>
+
+
+    <!--start color for verify code-->
+    <color name="code_bottom_verify_icon">#b4d78f</color>
+    <color name="code_bottom_error_verify_icon">#e84849</color>
+    <color name="color_text_code_verify">#000000</color>
+    <!--end color for verify code-->
+
+
+    <color name="color_tab_courses">#8fc257</color>
+    <color name="color_tab_courses_selected">#d6e9c2</color>
+    <color name="color_diver_tab_courses">#33D6E9C2</color>
+    <color name="color_tab_plan">#8fc257</color>
+    <color name="colorSheetBottom">#fbffffff</color>
+
+
+    <color name="color_star_enable">#fdba2c</color>
+    <color name="color_star_un_enable">#b5b5b5</color>
+
+    <color name="colorDarkBlue2">#1774E2</color>
+    <color name="colorDarkBlue">#005ca3</color>
+    <color name="colorwriteBlue">#0d90d6</color>
+    <color name="colorbackgroundBlue">#e5f6fe</color>
+    <!--table view score card-->
+    <color name="table_gray">#F2F2F2</color>
+    <color name="table_lightning">#CFE5BB</color>
+    <color name="table_dark">#c3c3c3</color>
+    <color name="color_planing">#e2bd2b</color>
+    <color name="color_finish">#2ad0d9</color>
+    <color name="color_point_score">#20334D</color>
+
+    <color name="color_hazard">#d3c7c4</color>
+    <color name="color_handle_sheet_bottom_down">#d1d1d1</color>
+
+    <color name="color_rule_header">#f8f8f8</color>
+    <color name="colorBackgroundMenu">#c7000000</color>
+
+    <color name="color_flag_blue">#20bef1</color>
+    <color name="color_flag_yellow">#f9d750</color>
+    <color name="color_flag_yellow_light">#fef47f</color>
+    <color name="color_flag_red">#d8db232e</color>
+    <color name="background_spotlight">#d5000000</color>
+
+    <color name="background_select_course">#AE000000</color>
+    <color name="color_text_content_select_course">#AD0077B1</color>
+    <color name="color_text_title_select_course">#AD345E08</color>
+
+    <color name="color_mask">#c8000000</color>
+    <color name="color_chart">#1AFF5B02</color>
+    <color name="color_chart_hit">#26A760</color>
+    <color name="color_chart_miss">#FC591F</color>
+    <color name="color_chart_high_light">#FF5B02</color>
+
+    <color name="color_diver_chart">#C6C6C6</color>
+
+    <color name="color_read_message">#727272</color>
+    <color name="color_unread_message">#20bef1</color>
+
+    <color name="color_time_chat">#E2E2E2</color>
+    <color name="color_bg_sender_chat">#98C765</color>
+
+    <color name="color_mask_view_green">#B3000000</color>
+
+<!--    new update-->
+    <color name="textColorDark">#000000</color>
+    <color name="textColorGray">#6B6B6B</color>
+    <color name="textColorLight">#FFFFFF</color>
+    <color name="textColorHintLight">#ECECEC</color>
+    <color name="textColorHover">#0D2857</color>
+    <color name="colorEasyButtonFalseEnable">#FFD6D6D6</color>
+    <color name="colorTextToolbar">#ffffff</color>
+    <color name="colorPullToRefresh">#ff00</color>
+    <color name="colorPullToRefreshMore">#FFEB3B</color>
+
+    <color name="colorTitleCountDown">#D8E5AE</color>
+    <color name="colorBackgroundMain">#FFFFFF</color>
+    <color name="colorBackgroundMainGray">#F2F2F2</color>
+    <color name="colorBackgroundThemeLinkerEasyGolfButton">#DBEEF3</color>
+    <color name="colorEnable">#FF4B49</color>
+    <color name="colorDistanceMap">#c7000000</color>
+    <color name="colorLoading">#E3E3E3</color>
+    <color name="green_border_color">#63B61E</color>
+    <color name="dynamic_native_color">#69B225</color>
+    <color name="colorStarDisEnable">#A6A6A6</color>
+    <color name="colorHandicapWarning">#FFF90000</color>
+    <color name="colorHintLinker">#e5f6fe</color>
+    <color name="colorStartEasyGolfButton">#38ad65</color>
+    <color name="colorEndEasyGolfButton">#63b523</color>
+    <color name="colorHighlightHeaderRow">#f3f3f3</color>
+    <color name="colorHighlightUserRow">#f0fae5</color>
+</resources>

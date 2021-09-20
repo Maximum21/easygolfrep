@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/d_10"
+    android:background="@drawable/round_corners_background_white">
+
+   <com.minhhop.easygolf.presentation.custom.EasyGolfNewsFeedView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        android:layout_marginEnd="@dimen/d_15"
+        android:layout_marginStart="@dimen/d_15"
+        android:id="@+id/post_profile_iv_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/post_profile_iv_layout1"
+        android:layout_height="match_parent"/>
+  <com.minhhop.easygolf.presentation.custom.EasyGolfNewsFeedView
+      android:layout_width="0dp"
+      android:paddingStart="@dimen/d_10"
+      android:paddingEnd="@dimen/d_10"
+      android:visibility="gone"
+      android:background="@drawable/round_corners_gray_borders_background_transparent"
+      android:id="@+id/post_profile_iv_layout1"
+      app:layout_constraintEnd_toEndOf="@+id/post_profile_iv_layout"
+      app:layout_constraintStart_toStartOf="@+id/post_profile_iv_layout"
+      app:layout_constraintBottom_toTopOf="@+id/like_post_iv"
+      android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:paddingTop="@dimen/d_15"
+        android:id="@+id/like_post_iv"
+        android:layout_width="@dimen/d_20"
+        android:layout_height="@dimen/d_35"
+        android:layout_marginBottom="@dimen/d_15"
+        android:src="@drawable/ic_icon_like_black"
+        app:layout_constraintTop_toBottomOf="@+id/images_collectino_group"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/post_profile_iv_layout" />
+
+    <TextView
+        android:paddingTop="@dimen/d_15"
+        app:layout_constraintTop_toTopOf="@+id/like_post_iv"
+        android:id="@+id/like_post_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_5"
+        android:text="@string/like"
+        android:textColor="@color/textColorGray"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@id/like_post_iv"
+        app:layout_constraintStart_toEndOf="@id/like_post_iv"/>
+
+    <TextView
+        android:id="@+id/like_post_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_2"
+        android:text=""
+        android:paddingTop="@dimen/d_15"
+        android:textColor="@color/textColorGray"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="@+id/like_post_tv"
+        app:layout_constraintBottom_toBottomOf="@id/like_post_tv"
+        app:layout_constraintStart_toEndOf="@id/like_post_tv"/>
+    <androidx.constraintlayout.widget.Group
+        android:clickable="true"
+        android:focusable="true"
+        app:constraint_referenced_ids="like_post_tv,like_post_iv"
+        android:id="@+id/post_like_group"
+        app:layout_constraintBottom_toBottomOf="@id/like_post_iv"
+        app:layout_constraintEnd_toEndOf="@id/like_post_count_tv"
+        app:layout_constraintTop_toTopOf="@id/like_post_iv"
+        app:layout_constraintStart_toStartOf="@+id/like_post_iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        app:tint="@color/textColorGray"
+        android:paddingTop="@dimen/d_15"
+        android:id="@+id/comment_post_iv"
+        android:layout_width="@dimen/d_20"
+        android:layout_height="@dimen/d_35"
+        android:src="@drawable/comment_icon_gray"
+        app:layout_constraintTop_toTopOf="@+id/like_post_iv"
+        app:layout_constraintBottom_toBottomOf="@+id/like_post_iv"
+        app:layout_constraintEnd_toStartOf="@id/comment_post_tv"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/like_post_tv" />
+
+    <TextView
+        android:paddingTop="@dimen/d_15"
+        android:id="@+id/comment_post_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_5"
+        android:text="Comment"
+        android:textColor="@color/textColorGray"
+        android:textSize="13sp"
+        app:layout_constraintTop_toTopOf="@+id/comment_post_iv"
+        app:layout_constraintEnd_toStartOf="@+id/comment_post_count_tv"
+        app:layout_constraintBottom_toBottomOf="@id/comment_post_iv"
+        app:layout_constraintStart_toEndOf="@id/comment_post_iv" />
+
+    <TextView
+        android:id="@+id/comment_post_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_2"
+        android:text=""
+        android:paddingTop="@dimen/d_15"
+        android:textColor="@color/textColorGray"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="@+id/comment_post_tv"
+        app:layout_constraintBottom_toBottomOf="@id/comment_post_tv"
+        app:layout_constraintEnd_toStartOf="@id/share_post_iv"
+        app:layout_constraintStart_toEndOf="@id/comment_post_tv" />
+
+    <androidx.constraintlayout.widget.Group
+        android:clickable="true"
+        android:focusable="true"
+        app:constraint_referenced_ids="comment_post_tv,comment_post_iv"
+        android:id="@+id/post_comment_group"
+        app:layout_constraintBottom_toBottomOf="@id/comment_post_iv"
+        app:layout_constraintEnd_toEndOf="@id/comment_post_count_tv"
+        app:layout_constraintTop_toTopOf="@id/comment_post_iv"
+        app:layout_constraintStart_toStartOf="@+id/comment_post_iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:paddingTop="@dimen/d_15"
+        app:tint="@color/textColorGray"
+        android:layout_marginEnd="@dimen/d_5"
+        android:id="@+id/share_post_iv"
+        android:layout_width="@dimen/d_20"
+        android:layout_height="@dimen/d_35"
+        android:rotation="180"
+        android:rotationX="180"
+        android:src="@drawable/ic_share_post_icon_green"
+        app:layout_constraintBottom_toBottomOf="@+id/like_post_iv"
+        app:layout_constraintEnd_toStartOf="@id/share_post_tv" />
+
+    <TextView
+        android:paddingTop="@dimen/d_15"
+        android:id="@+id/share_post_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/d_2"
+        android:text="@string/share"
+        android:textColor="@color/textColorGray"
+        android:textSize="13sp"
+        app:layout_constraintTop_toTopOf="@+id/share_post_iv"
+        app:layout_constraintBottom_toBottomOf="@id/like_post_iv"
+        app:layout_constraintEnd_toStartOf="@id/share_post_count_tv" />
+
+    <TextView
+        android:paddingTop="@dimen/d_15"
+        android:id="@+id/share_post_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorGray"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="@+id/share_post_tv"
+        app:layout_constraintBottom_toBottomOf="@id/share_post_tv"
+        app:layout_constraintEnd_toEndOf="@id/post_profile_iv_layout" />
+
+    <androidx.constraintlayout.widget.Group
+        android:clickable="true"
+        android:focusable="true"
+        app:constraint_referenced_ids="share_post_tv,share_post_iv"
+        android:id="@+id/post_share_group"
+        app:layout_constraintBottom_toBottomOf="@id/share_post_iv"
+        app:layout_constraintEnd_toEndOf="@id/share_post_count_tv"
+        app:layout_constraintTop_toTopOf="@id/share_post_iv"
+        app:layout_constraintStart_toStartOf="@+id/share_post_iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

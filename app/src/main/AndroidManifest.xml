@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.minhhop.easygolf">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".EasyGolfApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".presentation.requestcourse.RequestCourseActivity"></activity>
+        <activity android:name=".presentation.account.AccountUpdateActivity" />
+        <activity android:name=".presentation.userfeed.FeedsActivity" />
+        <activity android:name=".presentation.pass_score.EnterPassScoreActivity" />
+        <activity android:name=".presentation.notification.NotificationActivity" />
+        <activity android:name=".presentation.round.RoundHistoryActivity" />
+        <activity android:name=".presentation.rules.GolfRulesActivity" />
+        <activity android:name=".presentation.user.UserProfileActivity" />
+        <activity android:name=".presentation.feed.CreatePostActivity" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icon_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" /> <!-- Facebook sdk -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" /> <!-- Google api -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" /> <!-- start for channel notifications -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" /> <!-- end for channel notifications -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.file_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".views.activities.CourseDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.country.CountryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".views.activities.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".views.activities.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.password.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activities.SelectCourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activities.NewsDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.window.translucent.status" />
+        <activity
+            android:name=".presentation.more.MoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activities.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".views.activities.AccountSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.account.AccountSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activities.AccountSettingEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.feedback.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".views.activities.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".presentation.forgotpassword.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".presentation.verify_code.VerifyCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".views.activities.RuleGolfActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".views.activities.RuleGolfDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".views.activities.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".views.activities.SearchRuleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".views.activities.SearchBookingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".presentation.golf.PlayGolfActivityOld"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".presentation.golf.play.PlayGolfActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".views.activities.WozListScoreMoreActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".views.activities.PlanGolfActivityOld"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".presentation.course.ScoreCardCourseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".views.activities.MessengerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activities.AddPeopleChatActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".views.activities.ScheduleDetailActivity" />
+        <activity android:name=".presentation.endgame.EndGameActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            />
+        <activity
+            android:name=".views.activities.ListMessageActivity"
+            android:theme="@style/AppTheme.Transparent" />
+        <activity android:name=".views.activities.PhotoDetailActivity" />
+        <activity android:name=".views.activities.SettingMessageActivity" />
+        <activity android:name=".views.activities.ContactActivity" />
+        <activity android:name=".views.activities.ScheduleCreateActivity" />
+        <activity android:name=".views.activities.ScheduleEditActivity" />
+        <activity android:name=".views.activities.ContactSearchActivity" />
+        <activity android:name=".views.activities.PostDetailsActivity" />
+
+        <service
+            android:name=".services.EasyGolfFirebaseService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- start updates -->
+        <activity
+            android:name=".presentation.splash.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.signin.SignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.signup.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.policy.PolicyTermsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.home.EasyGolfHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.club.detail.EasyGolfClubDetailActivity"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".presentation.player.add.AddPlayerActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".presentation.gallery.EasyGolfGalleryActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".presentation.scorecard.ScorecardActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|screenSize"
+            />
+    </application>
+
+</manifest>

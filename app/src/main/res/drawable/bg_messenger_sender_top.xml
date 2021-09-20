@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:topLeftRadius="@dimen/d_20"
+        android:bottomLeftRadius="@dimen/d_20"
+        android:bottomRightRadius="@dimen/d_5"
+        android:topRightRadius="@dimen/d_20"
+        />
+    <solid android:color="@color/color_bg_sender_chat"/>
+</shape>

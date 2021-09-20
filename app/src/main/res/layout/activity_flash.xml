@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:src="@drawable/bg_flash_home" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_marginTop="@dimen/margin_top_safe_flash"
+        android:layout_width="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slogan"
+        android:layout_centerHorizontal="true"
+        android:textColor="#b4d78f"
+        android:textAppearance="@style/AppTheme.WozFont.Apple"
+        android:textSize="24sp"
+        />
+
+    <ProgressBar
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        />
+
+</RelativeLayout>

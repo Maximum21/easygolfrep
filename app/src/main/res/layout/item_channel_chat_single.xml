@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/viewRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/d_10"
+    android:paddingStart="@dimen/d_15"
+    android:paddingEnd="@dimen/d_15"
+    android:paddingBottom="0dp">
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        android:src="@drawable/ic_icon_user_default"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/statusOnline"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_icon_online"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/ic_bg_icon_chat_group"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/imgAvatar"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="@dimen/d_5"
+        />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_name_chat"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgAvatar"
+        app:layout_constraintEnd_toStartOf="@id/txtTime"
+        android:text="@string/app_name"
+        android:layout_marginStart="@dimen/d_10"
+        />
+
+    <TextView
+        android:id="@+id/lastMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_info_chat"
+        android:textColor="@color/colorTextDark"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintTop_toBottomOf="@id/txtName"
+        app:layout_constraintStart_toEndOf="@id/imgAvatar"
+        app:layout_constraintEnd_toStartOf="@id/txtTime"
+        android:text="@string/lorem"
+        android:layout_marginStart="@dimen/d_10"
+        />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/d_15"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:id="@+id/txtUnreadCount"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:background="@drawable/point_holder"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/d_15"
+        app:layout_constraintTop_toBottomOf="@id/txtTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <View
+        android:id="@+id/viewAssistance"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/easygolf_bottom_navigation_height_bezier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgAvatar"
+        android:visibility="gone"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

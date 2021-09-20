@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <com.minhhop.easygolf.presentation.custom.EasyGolfToolbar
+        android:id="@+id/toolbarBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isLight="false"
+        >
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textCounterSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:text="@string/done_format"
+            android:visibility="gone"
+            android:textColor="#ff00"
+            android:textSize="@dimen/normal_font_size"
+            style="@style/normal"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/normal_margin"
+            android:layout_gravity="center|end"
+            />
+    </com.minhhop.easygolf.presentation.custom.EasyGolfToolbar>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/toolbarSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:drawableStartCompat="@drawable/baseline_search_black_24"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginStart="@dimen/normal_margin"
+        android:layout_marginEnd="@dimen/normal_margin"
+        android:background="@drawable/background_border_white"
+        android:backgroundTint="@color/colorBgGray"
+        android:textSize="@dimen/normal_font_size"
+        android:drawablePadding="@dimen/small_margin"
+        android:hint="@string/find_courses"
+        android:paddingStart="@dimen/normal_margin"
+        android:paddingEnd="@dimen/normal_margin"
+        android:paddingTop="@dimen/little_margin"
+        android:paddingBottom="@dimen/little_margin"
+        android:inputType="text"
+        app:drawableTint="@color/colorPrimary"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_courses_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <include layout="@layout/layout_mask"/>
+    </FrameLayout>
+
+
+</LinearLayout>

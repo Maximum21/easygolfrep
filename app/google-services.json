@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "490480680116",
+    "firebase_url": "https://easygolf-9872e.firebaseio.com",
+    "project_id": "easygolf-9872e",
+    "storage_bucket": "easygolf-9872e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490480680116:android:0fb0c85beacf265c",
+        "android_client_info": {
+          "package_name": "com.minhhop.easygolf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490480680116-p2npg81gvu54auoueafisho75dtcbpa6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.minhhop.easygolf",
+            "certificate_hash": "9babb6db15d90024588e4c3c0ef4078c8262fbfa"
+          }
+        },
+        {
+          "client_id": "490480680116-aqfti0qobj4i17sk9a61pqge44cim7oh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnm_-rodP84OWWG8Ud2_PP1ydkVQbFfIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490480680116-aqfti0qobj4i17sk9a61pqge44cim7oh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "490480680116-ls18b0m4796d7iukdu49nurgh23b3ag5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.minhhop.easygolf.EasyGolf.dev"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490480680116:android:21c96c48e8142144722be1",
+        "android_client_info": {
+          "package_name": "com.minhhop.easygolf.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490480680116-aqfti0qobj4i17sk9a61pqge44cim7oh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnm_-rodP84OWWG8Ud2_PP1ydkVQbFfIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490480680116-aqfti0qobj4i17sk9a61pqge44cim7oh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "490480680116-ls18b0m4796d7iukdu49nurgh23b3ag5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.minhhop.easygolf.EasyGolf.dev"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

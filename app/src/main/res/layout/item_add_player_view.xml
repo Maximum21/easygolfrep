@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/viewRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/normal_margin"
+    android:layout_marginEnd="@dimen/normal_margin"
+    android:layout_marginTop="@dimen/normal_margin"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/maskAvatar"
+        android:layout_width="@dimen/size_player"
+        android:layout_height="@dimen/size_player"
+        app:cardCornerRadius="@dimen/size_radius_player"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardElevation="0dp"
+        >
+        <ImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/maskAvatar"
+        app:layout_constraintEnd_toStartOf="@id/imgChecker"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="@dimen/normal_margin"
+        >
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/bold"
+            android:text="@string/app_name"
+            android:textSize="@dimen/normal_font_size"
+            android:textColor="@color/textColorDark"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textHandicap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/normal"
+            android:text="@string/app_name"
+            android:textSize="@dimen/small_font_size"
+            android:textColor="@color/textColorGray"
+            />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgChecker"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_icon_uncheck_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
